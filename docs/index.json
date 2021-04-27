@@ -1,20 +1,20 @@
 [
 {
-	"uri": "/workshop-terraform-modules/",
+	"uri": "/",
 	"title": "AWS Terraform Workshop",
 	"tags": [],
 	"description": "",
 	"content": " AWS Terraform Workshop Welcome In this workshop you will learn how to use terraform modules to deploy infrastructure on AWS\nLearning Objectives  Terraform Modules on AWS Overview Create Terraform Cloud Account Setup Terraform for Cloud Workspace Build a sample architecture using Terraform Modules  The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various concepts. These examples are not intended for use in production environments.  "
 },
 {
-	"uri": "/workshop-terraform-modules/categories.html",
+	"uri": "/categories.html",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/workshop-terraform-modules/tags.html",
+	"uri": "/tags.html",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/workshop-terraform-modules/</loc>
+    <loc>/</loc>
   </url><url>
-    <loc>/workshop-terraform-modules/categories.html</loc>
+    <loc>/categories.html</loc>
   </url><url>
-    <loc>/workshop-terraform-modules/tags.html</loc>
+    <loc>/tags.html</loc>
   </url>
 </urlset>
