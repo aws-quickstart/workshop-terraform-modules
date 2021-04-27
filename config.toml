@@ -1,4 +1,4 @@
-baseURL = "/workshop-terraform-modules/"
+baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
@@ -46,7 +46,8 @@ publishDir = "docs"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-name = "<i class='fas fa-tools'></i>AWS Terraform Modules Homepage"
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i>AWS Terraform Modules"
 url = "https://aws.amazon.com/quickstart/architecture/terraform-modules-on-aws/"
 weight = 10
 
