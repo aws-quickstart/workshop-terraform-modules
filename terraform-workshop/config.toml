@@ -8,6 +8,8 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= "true"
 uglyurls = "true"
 enableEmoji = true
+publishDir = "docs"
+
 
 [params]
   # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. 
