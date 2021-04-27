@@ -1,1 +1,1 @@
-# workshop-hashicorp-terraform
+# Terraform Workshop
