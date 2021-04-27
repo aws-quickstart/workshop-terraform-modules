@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "/workshop-terraform-modules/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
