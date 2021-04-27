@@ -4,7 +4,21 @@
 	"title": "AWS Terraform Workshop",
 	"tags": [],
 	"description": "",
-	"content": " AWS Terraform Workshop Welcome In this workshop you will learn how to use terraform modules to deploy infrastructure on AWS\nLearning Objectives  Terraform Modules on AWS Overview Create Terraform Cloud Account Setup Terraform for Cloud Workspace Build a sample architecture using Terraform Modules  The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various concepts. These examples are not intended for use in production environments.  "
+	"content": "AWS Terraform Workshop Welcome In this workshop you will learn how to use terraform modules to deploy infrastructure on AWS\nLearning Objectives  Terraform Modules on AWS Overview Create Terraform Cloud Account Setup Terraform for Cloud Workspace Build a sample architecture using Terraform Modules   "
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/10_getting_started/1_aws_account.html",
+	"title": "AWS Account",
+	"tags": [],
+	"description": "",
+	"content": " You are responsible for the cost of the AWS services used while running this workshop in your AWS account.\n Your account must have the ability to create new IAM roles and scope other IAM permissions.\n Create an account   If you don\u0026rsquo;t already have an AWS account with Administrator access: create one now\n  Once you have an AWS account, ensure you are following the remaining workshop steps as an IAM user with administrator access to the AWS account: Create a new IAM user to use for the workshop\n  Enter the user details:   Attach the AdministratorAccess IAM Policy:   Click to create the new user:   Take note of the login URL and save:   Please continue to the next section.\n "
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/10_getting_started.html",
+	"title": "Getting Started",
+	"tags": [],
+	"description": "",
+	"content": "Getting Started Click here To run this workshop you will need access to an AWS Account\n "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/categories.html",

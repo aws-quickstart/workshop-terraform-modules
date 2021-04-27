@@ -8,7 +8,10 @@ metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= "true"
 uglyurls = "true"
 enableEmoji = true
+
+sectionPagesMenu = "main"
 publishDir = "docs"
+
 
 
 [params]
@@ -43,8 +46,6 @@ publishDir = "docs"
   themeVariant = "mine"
 
 
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-tools'></i>AWS Terraform Modules"
@@ -56,7 +57,6 @@ name = "<i class='fas fa-chalkboard-teacher'></i> Terraform Registry"
 url = "https://registry.terraform.io/namespaces/aws-quickstart"
 weight = 20
 
-[markup]
-  defaultMarkdownHandler = "blackfriday"
-  [markup.blackFriday]
-    hrefTargetBlank = true
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+page = [ "HTML", "AMP"]

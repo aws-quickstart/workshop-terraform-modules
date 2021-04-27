@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AWS Terraform Workshop on Terraform on AWS Workshop</title>
-    <link>https://aws-quickstart.github.io/workshop-terraform-modules/</link>
-    <description>Recent content in AWS Terraform Workshop on Terraform on AWS Workshop</description>
+    <title>Getting Started on Terraform on AWS Workshop</title>
+    <link>https://aws-quickstart.github.io/workshop-terraform-modules/10_getting_started.html</link>
+    <description>Recent content in Getting Started on Terraform on AWS Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://aws-quickstart.github.io/workshop-terraform-modules/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://aws-quickstart.github.io/workshop-terraform-modules/10_getting_started/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS Account</title>
       <link>https://aws-quickstart.github.io/workshop-terraform-modules/10_getting_started/1_aws_account.html</link>
