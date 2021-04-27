@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://aws-quickstart.github.io/workshop-terraform-modules/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
