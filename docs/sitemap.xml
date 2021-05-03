@@ -6,7 +6,17 @@
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/10_getting_started/1_aws_account.html</loc>
   </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/1_module_stucture.html</loc>
+  </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/10_register.html</loc>
+  </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/2_module_versioning.html</loc>
+  </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/10_getting_started.html</loc>
+  </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview.html</loc>
+  </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/categories.html</loc>
   </url><url>

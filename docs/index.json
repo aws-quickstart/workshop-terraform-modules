@@ -14,11 +14,46 @@
 	"content": " You are responsible for the cost of the AWS services used while running this workshop in your AWS account.\n Your account must have the ability to create new IAM roles and scope other IAM permissions.\n Create an account   If you don\u0026rsquo;t already have an AWS account with Administrator access: create one now\n  Once you have an AWS account, ensure you are following the remaining workshop steps as an IAM user with administrator access to the AWS account: Create a new IAM user to use for the workshop\n  Enter the user details:   Attach the AdministratorAccess IAM Policy:   Click to create the new user:   Take note of the login URL and save:   Please continue to the next section.\n "
 },
 {
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/1_module_stucture.html",
+	"title": "Module Structure",
+	"tags": [],
+	"description": "",
+	"content": "Basic Module Structure  LICENSE The license under which this module is available. README.md The root module and any nested modules should have README files main.tf, variables.tf, outputs.tf Primary entrypoint of the module /modules Nested modules can be loaded under modules/  "
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/10_register.html",
+	"title": "Signup for Account",
+	"tags": [],
+	"description": "",
+	"content": " Go here to create an account  "
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/2_module_versioning.html",
+	"title": "Module Versioning",
+	"tags": [],
+	"description": "",
+	"content": "Module Versioning When using AWS Modules we recommend locking to version while calling the module. This ensure that updates only happen when convenient to you.\nThe example below show how to use versioning\n"
+},
+{
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/10_getting_started.html",
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
 	"content": "Getting Started Click here To run this workshop you will need access to an AWS Account\n "
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview.html",
+	"title": "Terraform Modules Overview",
+	"tags": [],
+	"description": "",
+	"content": "What are modules in terraform ? Terraform modules are a collection of .tf files that are used together to deploy a resource. A module typically consists of Root modules with in a root modules you can also call child modules. Bellow is an example of a module.\nIn this workshop we will use 3 modules (workspace/vpc/db) to build a tf deployment. The module we will reference are opensourced. They part of a catalog of modules published on AWS Infrastructure and Automation cataglog.\n A link to the AWS Terraform Modules Catalog is provided in the navigation bar to the left of your screen\n "
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account.html",
+	"title": "Terraform Cloud",
+	"tags": [],
+	"description": "",
+	"content": "Getting Started If you have a existing terraform cloud account you can skip the registeration\n "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/categories.html",
