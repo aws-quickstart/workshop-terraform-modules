@@ -1,7 +1,7 @@
 +++
 title = "Terraform Cloud"
 chapter = true
-weight = 10
+weight = 30
 +++
 
 # Getting Started
