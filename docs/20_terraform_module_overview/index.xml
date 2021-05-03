@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terraform Modules Overview on Terraform on AWS Workshop</title>
+    <link>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview.html</link>
+    <description>Recent content in Terraform Modules Overview on Terraform on AWS Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Module Structure</title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/1_module_stucture.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/1_module_stucture.html</guid>
+      <description>Basic Module Structure  LICENSE The license under which this module is available. README.md The root module and any nested modules should have README files main.tf, variables.tf, outputs.tf Primary entrypoint of the module /modules Nested modules can be loaded under modules/  </description>
+    </item>
+    
+    <item>
+      <title>Module Versioning</title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/2_module_versioning.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/2_module_versioning.html</guid>
+      <description>Module Versioning When using AWS Modules we recommend locking to version while calling the module. This ensure that updates only happen when convenient to you.
+The example below show how to use versioning</description>
+    </item>
+    
+  </channel>
+</rss>
