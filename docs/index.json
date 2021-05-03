@@ -21,13 +21,6 @@
 	"content": "Basic Module Structure  LICENSE The license under which this module is available. README.md The root module and any nested modules should have README files main.tf, variables.tf, outputs.tf Primary entrypoint of the module /modules Nested modules can be loaded under modules/  "
 },
 {
-	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/10_register.html",
-	"title": "Signup for Account",
-	"tags": [],
-	"description": "",
-	"content": " Go here to create an account  "
-},
-{
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/2_module_versioning.html",
 	"title": "Module Versioning",
 	"tags": [],
@@ -40,6 +33,34 @@
 	"tags": [],
 	"description": "",
 	"content": "Getting Started Click here To run this workshop you will need access to an AWS Account\n "
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/10_register.html",
+	"title": "Signup for Account",
+	"tags": [],
+	"description": "",
+	"content": "Go here to create an account\n  Enter a Username\n  Enter an Email\n  Enter a Password\n  Choose Create account\n  "
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/11_register.html",
+	"title": "Create an 0rganization",
+	"tags": [],
+	"description": "",
+	"content": "##Create Terraform organization\n Name your org eg: aws-devops-workshop- with your gitlab userid appended.  Example: aws-devops-workshop-tonynv\n  Provide a Email address\n  Click Create organization\n  "
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/12_register.html",
+	"title": "Start Trail",
+	"tags": [],
+	"description": "",
+	"content": "Click Upgrade Now\n"
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/13_register.html",
+	"title": "Select Trail Plan",
+	"tags": [],
+	"description": "",
+	"content": "  Choose Trial Plan\n  Start your free trial\n  Expected Output:\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview.html",

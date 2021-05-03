@@ -28,15 +28,6 @@
     </item>
     
     <item>
-      <title>Signup for Account</title>
-      <link>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/10_register.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/10_register.html</guid>
-      <description> Go here to create an account  </description>
-    </item>
-    
-    <item>
       <title>Module Versioning</title>
       <link>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/2_module_versioning.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -44,6 +35,53 @@
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/2_module_versioning.html</guid>
       <description>Module Versioning When using AWS Modules we recommend locking to version while calling the module. This ensure that updates only happen when convenient to you.
 The example below show how to use versioning</description>
+    </item>
+    
+    <item>
+      <title>Signup for Account</title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/10_register.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/10_register.html</guid>
+      <description>Go here to create an account
+  Enter a Username
+  Enter an Email
+  Enter a Password
+  Choose Create account
+  </description>
+    </item>
+    
+    <item>
+      <title>Create an 0rganization</title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/11_register.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/11_register.html</guid>
+      <description>##Create Terraform organization
+ Name your org eg: aws-devops-workshop- with your gitlab userid appended.  Example: aws-devops-workshop-tonynv
+  Provide a Email address
+  Click Create organization
+  </description>
+    </item>
+    
+    <item>
+      <title>Start Trail</title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/12_register.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/12_register.html</guid>
+      <description>Click Upgrade Now</description>
+    </item>
+    
+    <item>
+      <title>Select Trail Plan</title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/13_register.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/13_register.html</guid>
+      <description>Choose Trial Plan
+  Start your free trial
+  Expected Output:</description>
     </item>
     
   </channel>
