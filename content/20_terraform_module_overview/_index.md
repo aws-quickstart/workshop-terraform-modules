@@ -11,3 +11,5 @@ Terraform modules are a collection of `.tf` files that are used together to depl
 ![module-tree](images/module-tree.png)
 
 In this workshop we will use 3 modules (workspace/vpc/db) to build a tf deployment. The module we will reference are opensourced. They part of a catalog of modules published on AWS Infrastructure and Automation cataglog.  
+
+> A link to the AWS Terraform Modules Catalog is provided in the navigation bar to the left of your screen 
