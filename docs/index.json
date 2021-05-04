@@ -91,6 +91,20 @@
 	"content": "We are going to use AWS CloudShell to execute this workshop\n"
 },
 {
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module.html",
+	"title": "Clone VPC Module",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module/51_git_clone_workspace.html",
+	"title": "Clone terraform workspace",
+	"tags": [],
+	"description": "",
+	"content": "Clone vpc module git clone https://github.com/aws-quickstart/terraform-aws-vpc.git\n"
+},
+{
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/categories.html",
 	"title": "Categories",
 	"tags": [],

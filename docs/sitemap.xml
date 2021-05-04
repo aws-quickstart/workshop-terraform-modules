@@ -28,6 +28,10 @@
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_deploy_base_infrastructure.html</loc>
   </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module.html</loc>
+  </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module/51_git_clone_workspace.html</loc>
+  </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/categories.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/tags.html</loc>
