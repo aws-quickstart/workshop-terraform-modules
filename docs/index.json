@@ -77,6 +77,20 @@
 	"content": "Getting Started If you have a existing terraform cloud account you can skip the registeration\n "
 },
 {
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_deploy_base_infrastructure/40_start_cloud_shell.html",
+	"title": "Install terraform in AWS cloud shell",
+	"tags": [],
+	"description": "",
+	"content": "Go here\nInstall terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip\nUnzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip\nAdd terraform to path sudo mv terraform /usr/local/bin/\nRemove zipfile rm terraform_0.15.1_linux_amd64.zip\n"
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_deploy_base_infrastructure.html",
+	"title": "Setup AWS CloudShell",
+	"tags": [],
+	"description": "",
+	"content": "We are going to use AWS CloudShell to execute this workshop\n"
+},
+{
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/categories.html",
 	"title": "Categories",
 	"tags": [],
