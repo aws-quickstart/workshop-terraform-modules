@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/workshop-terraform-modules/images/favicon.png" type="image/png">
 
-    <title>Terraform Modules Overview :: Terraform on AWS Workshop</title>
+    <title>Install terraform in AWS cloud shell :: Terraform on AWS Workshop</title>
 
     
     <link href="/workshop-terraform-modules/css/nucleus.css?1620108630" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop-terraform-modules/20_terraform_module_overview.html">
+  <body class="" data-url="/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -145,8 +145,8 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/20_terraform_module_overview.html" title="Terraform Modules Overview" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/workshop-terraform-modules/20_terraform_module_overview.html">
@@ -343,7 +343,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/40_setup_cloudshell.html" title="Setup AWS CloudShell" class="dd-item
-        
+        parent
         
         
         ">
@@ -371,7 +371,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html" title="Install terraform in AWS cloud shell" class="dd-item ">
+      <li data-nav-id="/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html" title="Install terraform in AWS cloud shell" class="dd-item active">
         <a href="/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html">
         Install terraform in AWS cloud shell
         <i class="fas fa-check read-icon"></i>
@@ -578,7 +578,13 @@
             
           
           
-            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > Terraform Modules Overview
+            
+            
+          
+          
+            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/40_setup_cloudshell.html'>Setup AWS CloudShell</a> > Install terraform in AWS cloud shell
+          
+        
           
         
           
@@ -602,19 +608,20 @@
         
 
 
+<p>Go <a href="https://us-east-2.console.aws.amazon.com/cloudshell">here</a></p>
+<p><img src="images/start-cloud-shell.png" alt="tr-register"></p>
+<h2 id="install-terraform">Install terraform</h2>
+<h4 id="download-terraform">Download terraform</h4>
+<p><code>wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip</code></p>
+<h4 id="unzip-terraform-binaries">Unzip terraform binaries</h4>
+<p><code>unzip terraform_0.15.1_linux_amd64.zip</code></p>
+<h4 id="add-terraform-to-path">Add terraform to path</h4>
+<p><code>sudo mv terraform /usr/local/bin/</code></p>
+<h4 id="remove-zipfile">Remove zipfile</h4>
+<p><code>rm terraform_0.15.1_linux_amd64.zip</code></p>
 
-	<h1 id="what-are-modules-in-terraform-">What are modules in terraform ?</h1>
-<p>Terraform modules are a collection of <code>.tf</code> files that are used together to deploy a resource. A module typically consists of Root modules with in a root modules you can also call child modules. Bellow is an example of a module.</p>
-<p>In this workshop we will use 3 modules (workspace/vpc/db) to build a tf deployment. The module we will reference are opensourced. They part of a catalog of modules published on AWS Infrastructure and Automation cataglog.</p>
-<blockquote>
-<p>A link to the AWS Terraform Modules Catalog is provided in the navigation bar to the left of your screen</p>
-</blockquote>
 
-
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -686,7 +693,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -699,9 +705,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -831,6 +834,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -849,6 +853,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -918,10 +925,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/workshop-terraform-modules/10_getting_started/1_aws_account.html" title="AWS Account"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/workshop-terraform-modules/40_setup_cloudshell.html" title="Setup AWS CloudShell"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/workshop-terraform-modules/20_terraform_module_overview/1_module_stucture.html" title="Module Structure" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/workshop-terraform-modules/50_clone_module.html" title="Clone VPC Module" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -953,3 +960,4 @@
 
   </body>
 </html>
+

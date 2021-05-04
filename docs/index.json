@@ -77,14 +77,14 @@
 	"content": "Getting Started If you have a existing terraform cloud account you can skip the registeration\n "
 },
 {
-	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_deploy_base_infrastructure/40_start_cloud_shell.html",
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html",
 	"title": "Install terraform in AWS cloud shell",
 	"tags": [],
 	"description": "",
 	"content": "Go here\nInstall terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip\nUnzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip\nAdd terraform to path sudo mv terraform /usr/local/bin/\nRemove zipfile rm terraform_0.15.1_linux_amd64.zip\n"
 },
 {
-	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_deploy_base_infrastructure.html",
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell.html",
 	"title": "Setup AWS CloudShell",
 	"tags": [],
 	"description": "",
@@ -103,6 +103,20 @@
 	"tags": [],
 	"description": "",
 	"content": "Clone vpc module git clone https://github.com/aws-quickstart/terraform-aws-vpc.git\n"
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/60_setup_tf_inputs.html",
+	"title": "Setup Module Inputs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/60_setup_tf_inputs/61_setup_auto_tfvars.html",
+	"title": "Setup auto tfvars",
+	"tags": [],
+	"description": "",
+	"content": "Configure your tfvars file vi $HOME/.terraform.tfvars\nCreate a file that contains the inputs for the vpc module\nSetup module inputs AWS_ACCESS_KEY_ID = \u0026quot;*********************\u0026quot; AWS_SECRET_ACCESS_KEY = \u0026quot;*********************\u0026quot; tfe_organization = \u0026quot;tonynv-aws\u0026quot; tfe_email = \u0026quot;someone@companyx.com\u0026quot; region = \u0026quot;us-east-2\u0026quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended\n %\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/categories.html",

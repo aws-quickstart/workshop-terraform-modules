@@ -24,13 +24,17 @@
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account.html</loc>
   </url><url>
-    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_deploy_base_infrastructure/40_start_cloud_shell.html</loc>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html</loc>
   </url><url>
-    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_deploy_base_infrastructure.html</loc>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module/51_git_clone_workspace.html</loc>
+  </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/60_setup_tf_inputs.html</loc>
+  </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/60_setup_tf_inputs/61_setup_auto_tfvars.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/categories.html</loc>
   </url><url>
