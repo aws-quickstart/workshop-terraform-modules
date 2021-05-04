@@ -36,6 +36,12 @@
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/60_setup_tf_inputs/61_setup_auto_tfvars.html</loc>
   </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure.html</loc>
+  </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html</loc>
+  </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/72_deploy_vpc.html</loc>
+  </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/categories.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/tags.html</loc>

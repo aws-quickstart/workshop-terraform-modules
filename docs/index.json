@@ -116,7 +116,28 @@
 	"title": "Setup auto tfvars",
 	"tags": [],
 	"description": "",
-	"content": "Configure your tfvars file vi $HOME/.terraform.tfvars\nCreate a file that contains the inputs for the vpc module\nSetup module inputs AWS_ACCESS_KEY_ID = \u0026quot;*********************\u0026quot; AWS_SECRET_ACCESS_KEY = \u0026quot;*********************\u0026quot; tfe_organization = \u0026quot;tonynv-aws\u0026quot; tfe_email = \u0026quot;someone@companyx.com\u0026quot; region = \u0026quot;us-east-2\u0026quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended\n %\n"
+	"content": "Configure your tfvars file vi $HOME/.terraform.tfvars\nCreate a file that contains the inputs for the vpc module\nSetup module inputs AWS_ACCESS_KEY_ID = \u0026quot;*********************\u0026quot; AWS_SECRET_ACCESS_KEY = \u0026quot;*********************\u0026quot; tfe_organization = \u0026quot;the-org-name-you-created\u0026quot; tfe_email = \u0026quot;someone@companyx.com\u0026quot; region = \u0026quot;us-east-2\u0026quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended\n %\n"
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure.html",
+	"title": "Deploy base infrastructure",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html",
+	"title": "Setup TFC workspace",
+	"tags": [],
+	"description": "",
+	"content": "Setup Terraform workspace  Change directory to the root directory.  cd terraform-aws-vpc/\n Change to deploy directory  cd setup_workspace.\nExecute terraform  Run to following commands in order:  terraform init\nterraform apply -var-file=\u0026quot;$HOME/terraform.tfvars\u0026quot;.\n"
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/72_deploy_vpc.html",
+	"title": "Deploy VPC into TFC",
+	"tags": [],
+	"description": "",
+	"content": "Deploy Terraform in workspace Change directory to deploy dir (previous command auto generates backend.hcl)\ncd ../deploy\nterraform apply or terraform apply -var-file=\u0026quot;$HOME/.aws/terraform.tfvars\u0026quot;.\nTerraform apply is run remotely in Terraform Cloud\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/categories.html",
