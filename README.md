@@ -1,3 +1,3 @@
-# Terraform Workshop 
+# Terraform Workshop (WIP)
 
-This is a work in progress. Not ready for use
+Work in progress. Not ready for use
