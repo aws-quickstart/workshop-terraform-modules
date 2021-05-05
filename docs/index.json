@@ -81,21 +81,28 @@
 	"title": "Install terraform in AWS cloud shell",
 	"tags": [],
 	"description": "",
-	"content": "Go here\nInstall terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip\nUnzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip\nAdd terraform to path sudo mv terraform /usr/local/bin/\nRemove zipfile rm terraform_0.15.1_linux_amd64.zip\n"
+	"content": "Go here\nInstall terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip\nUnzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip\nCreate home/usr/bin mkdir -p $HOME/.usr/bin\nAdd terraform to path echo \u0026quot;PATH=\\$PATH:\\$HOME/.usr/bin\u0026quot; \u0026gt;\u0026gt;~/.bashrc\nRestart shell exec bash\nRemove zipfile rm terraform_0.15.1_linux_amd64.zip\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell.html",
 	"title": "Setup AWS CloudShell",
 	"tags": [],
 	"description": "",
-	"content": "We are going to use AWS CloudShell to execute this workshop\n"
+	"content": "In this lab we are going to start an AWS CloudShell. We will use this env execute this workshop.\n"
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html",
+	"title": "Configure Terraform Env ",
+	"tags": [],
+	"description": "",
+	"content": "  In CloudShell\n Run terraform login\nConfirm by typing yes\nPaste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login\nClick Create API token\nClick to Copy API token to clipboard\nPaste into you CloudShell\nExpected output: "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module.html",
 	"title": "Clone VPC Module",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "In this lab we will use git to clone the latest version off the aws-quickstart/tfc_workspace/aws module\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module/51_git_clone_workspace.html",
@@ -109,14 +116,14 @@
 	"title": "Setup Module Inputs",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "In this lab we will create the terraform vars file which we will used to pass input to the workspace module\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/60_setup_tf_inputs/61_setup_auto_tfvars.html",
 	"title": "Setup auto tfvars",
 	"tags": [],
 	"description": "",
-	"content": "Configure your tfvars file vi $HOME/.terraform.tfvars\nCreate a file that contains the inputs for the vpc module\nSetup module inputs AWS_ACCESS_KEY_ID = \u0026quot;*********************\u0026quot; AWS_SECRET_ACCESS_KEY = \u0026quot;*********************\u0026quot; tfe_organization = \u0026quot;the-org-name-you-created\u0026quot; tfe_email = \u0026quot;someone@companyx.com\u0026quot; region = \u0026quot;us-east-2\u0026quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended\n %\n"
+	"content": "Configure your tfvars file vi $HOME/terraform.tfvars\nCreate a file that contains the inputs for the vpc module\nSetup module inputs AWS_ACCESS_KEY_ID = \u0026quot;*********************\u0026quot; AWS_SECRET_ACCESS_KEY = \u0026quot;*********************\u0026quot; tfe_organization = \u0026quot;the-org-name-you-created\u0026quot; tfe_email = \u0026quot;someone@companyx.com\u0026quot; region = \u0026quot;us-east-2\u0026quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended\n %\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure.html",
@@ -130,7 +137,7 @@
 	"title": "Setup TFC workspace",
 	"tags": [],
 	"description": "",
-	"content": "Setup Terraform workspace  Change directory to the root directory.  cd terraform-aws-vpc/\n Change to deploy directory  cd setup_workspace.\nExecute terraform  Run to following commands in order:  terraform init\nterraform apply -var-file=\u0026quot;$HOME/terraform.tfvars\u0026quot;.\n"
+	"content": "Setup Terraform workspace  Change directory to the root directory.  cd terraform-aws-vpc/\n Change to deploy directory  cd setup_workspace.\nExecute terraform  Run to following commands in order:  terraform init\nExport Terraform Config Location  export TERRAFORM_CONFIG=\u0026quot;$HOME/.terraform.d/credentials.tfrc.json\u0026quot;\nterraform apply -var-file=\u0026quot;$HOME/terraform.tfvars\u0026quot;.\nChange to the deploy folder cd ../deploy\nterraform apply -auto-approve\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/72_deploy_vpc.html",

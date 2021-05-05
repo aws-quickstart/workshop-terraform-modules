@@ -93,8 +93,26 @@ The example below show how to use versioning</description>
       <description>Go here
 Install terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip
 Unzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip
-Add terraform to path sudo mv terraform /usr/local/bin/
+Create home/usr/bin mkdir -p $HOME/.usr/bin
+Add terraform to path echo &amp;quot;PATH=\$PATH:\$HOME/.usr/bin&amp;quot; &amp;gt;&amp;gt;~/.bashrc
+Restart shell exec bash
 Remove zipfile rm terraform_0.15.1_linux_amd64.zip</description>
+    </item>
+    
+    <item>
+      <title>Configure Terraform Env </title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html</guid>
+      <description>  In CloudShell
+ Run terraform login
+Confirm by typing yes
+Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login
+Click Create API token
+Click to Copy API token to clipboard
+Paste into you CloudShell
+Expected output: </description>
     </item>
     
     <item>
@@ -112,7 +130,7 @@ Remove zipfile rm terraform_0.15.1_linux_amd64.zip</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/60_setup_tf_inputs/61_setup_auto_tfvars.html</guid>
-      <description>Configure your tfvars file vi $HOME/.terraform.tfvars
+      <description>Configure your tfvars file vi $HOME/terraform.tfvars
 Create a file that contains the inputs for the vpc module
 Setup module inputs AWS_ACCESS_KEY_ID = &amp;quot;*********************&amp;quot; AWS_SECRET_ACCESS_KEY = &amp;quot;*********************&amp;quot; tfe_organization = &amp;quot;the-org-name-you-created&amp;quot; tfe_email = &amp;quot;someone@companyx.com&amp;quot; region = &amp;quot;us-east-2&amp;quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended
  %</description>
@@ -127,7 +145,10 @@ Setup module inputs AWS_ACCESS_KEY_ID = &amp;quot;*********************&amp;quot
       <description>Setup Terraform workspace  Change directory to the root directory.  cd terraform-aws-vpc/
  Change to deploy directory  cd setup_workspace.
 Execute terraform  Run to following commands in order:  terraform init
-terraform apply -var-file=&amp;quot;$HOME/terraform.tfvars&amp;quot;.</description>
+Export Terraform Config Location  export TERRAFORM_CONFIG=&amp;quot;$HOME/.terraform.d/credentials.tfrc.json&amp;quot;
+terraform apply -var-file=&amp;quot;$HOME/terraform.tfvars&amp;quot;.
+Change to the deploy folder cd ../deploy
+terraform apply -auto-approve</description>
     </item>
     
     <item>
