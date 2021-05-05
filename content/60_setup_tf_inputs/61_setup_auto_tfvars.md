@@ -5,7 +5,7 @@ weight = 61
 +++
 
 #### Configure your tfvars file
-`vi $HOME/.terraform.tfvars`
+`vi $HOME/terraform.tfvars`
 
 Create a file that contains the inputs for the vpc module
 

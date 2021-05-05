@@ -20,4 +20,15 @@ weight = 71
 
 `terraform init`
 
+#### Export Terraform Config Location
+
+` export TERRAFORM_CONFIG="$HOME/.terraform.d/credentials.tfrc.json"`
+
 `terraform apply  -var-file="$HOME/terraform.tfvars"`.
+
+
+
+#### Change to the deploy folder
+`cd ../deploy`
+
+`terraform apply -auto-approve`
