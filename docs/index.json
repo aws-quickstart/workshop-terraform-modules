@@ -123,7 +123,7 @@
 	"title": "Deploy base infrastructure",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "In this module we will create the following resource via terraform:\n  Terraform Cloud Workspace via aws-quickstart/tfc_workspace/aws module\n  AWS VPC via aws-quickstart/vpc/aws module\n  "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html",
