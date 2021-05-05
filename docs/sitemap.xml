@@ -28,6 +28,8 @@
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell.html</loc>
   </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html</loc>
+  </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module/51_git_clone_workspace.html</loc>

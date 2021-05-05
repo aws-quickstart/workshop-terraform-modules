@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/workshop-terraform-modules/images/favicon.png" type="image/png">
 
-    <title>Module Structure :: Terraform on AWS Workshop</title>
+    <title>Configure Terraform Env  :: Terraform on AWS Workshop</title>
 
     
     <link href="/workshop-terraform-modules/css/nucleus.css?1620177836" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop-terraform-modules/20_terraform_module_overview/1_module_stucture.html">
+  <body class="" data-url="/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -145,7 +145,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/20_terraform_module_overview.html" title="Terraform Modules Overview" class="dd-item
-        parent
+        
         
         
         ">
@@ -173,7 +173,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/20_terraform_module_overview/1_module_stucture.html" title="Module Structure" class="dd-item active">
+      <li data-nav-id="/workshop-terraform-modules/20_terraform_module_overview/1_module_stucture.html" title="Module Structure" class="dd-item ">
         <a href="/workshop-terraform-modules/20_terraform_module_overview/1_module_stucture.html">
         Module Structure
         <i class="fas fa-check read-icon"></i>
@@ -343,7 +343,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/40_setup_cloudshell.html" title="Setup AWS CloudShell" class="dd-item
-        
+        parent
         
         
         ">
@@ -392,7 +392,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html" title="Configure Terraform Env " class="dd-item ">
+      <li data-nav-id="/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html" title="Configure Terraform Env " class="dd-item active">
         <a href="/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html">
         Configure Terraform Env 
         <i class="fas fa-check read-icon"></i>
@@ -681,7 +681,7 @@
             
           
           
-            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/20_terraform_module_overview.html'>Terraform Modules Overview</a> > Module Structure
+            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/40_setup_cloudshell.html'>Setup AWS CloudShell</a> > Configure Terraform Env 
           
         
           
@@ -707,14 +707,21 @@
         
 
 
-<h2 id="basic-module-structure">Basic Module Structure</h2>
-<ul>
-<li><strong>LICENSE</strong> The license under which this module is available.</li>
-<li><strong>README.md</strong> The root module and any nested modules should have README files</li>
-<li><strong>main.tf, variables.tf, outputs.tf</strong>  Primary entrypoint of the module</li>
-<li><strong>/modules</strong> Nested modules can be loaded under <em>modules/</em></li>
-</ul>
-<p><img src="images/module-tree.png" alt="module-tree"></p>
+<h4 id="heading"></h4>
+<blockquote>
+<p>In CloudShell</p>
+</blockquote>
+<p>Run <code>terraform login</code></p>
+<p><img src="images/terraform-login1.png" alt="terraform-login1"></p>
+<p>Confirm by typing <strong>yes</strong></p>
+<p>Paste the following url into your browser to continue <code>https://app.terraform.io/app/settings/tokens?source=terraform-login</code></p>
+<p><img src="images/terraform-login2.png" alt="terraform-login2"></p>
+<p>Click <strong>Create API token</strong></p>
+<p><img src="images/terraform-login3.png" alt="terraform-login3"></p>
+<p>Click <strong>to Copy API token to clipboard</strong></p>
+<p>Paste into you CloudShell</p>
+<p>Expected output:
+<img src="images/terraform-login4.png" alt="terraform-login4"></p>
 
 
 <footer class="footline">
@@ -802,90 +809,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -961,6 +884,19 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -968,6 +904,77 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1085,10 +1092,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/workshop-terraform-modules/20_terraform_module_overview.html" title="Terraform Modules Overview"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html" title="Install terraform in AWS cloud shell"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/workshop-terraform-modules/20_terraform_module_overview/2_module_versioning.html" title="Module Versioning" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/workshop-terraform-modules/50_clone_module.html" title="Clone VPC Module" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
