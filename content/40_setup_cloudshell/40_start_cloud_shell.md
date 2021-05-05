@@ -17,8 +17,14 @@ Go [here](https://us-east-2.console.aws.amazon.com/cloudshell)
 #### Unzip terraform binaries
 `unzip terraform_0.15.1_linux_amd64.zip`
 
+#### Create home/usr/bin
+`mkdir -p $HOME/.usr/bin`
+
 #### Add terraform to path
-`sudo mv terraform /usr/local/bin/`
+`echo "PATH=\$PATH:\$HOME/.usr/bin" >>~/.bashrc`
+
+#### Restart shell
+`exec bash`
 
 #### Remove zipfile
 `rm terraform_0.15.1_linux_amd64.zip`

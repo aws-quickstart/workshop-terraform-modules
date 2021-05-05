@@ -4,4 +4,4 @@ chapter = true
 weight = 40
 +++
 
-We are going to use AWS CloudShell to execute this workshop
+In this lab we are going to start an AWS CloudShell. We will use this env execute this workshop.
