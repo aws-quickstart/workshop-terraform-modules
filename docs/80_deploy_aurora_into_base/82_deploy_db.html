@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/workshop-terraform-modules/images/favicon.png" type="image/png">
 
-    <title>Deploy base infrastructure :: Terraform on AWS Workshop</title>
+    <title>Deploy dB module :: Terraform on AWS Workshop</title>
 
     
     <link href="/workshop-terraform-modules/css/nucleus.css?1620202118" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop-terraform-modules/70_deploy_base_infrastructure.html">
+  <body class="" data-url="/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -535,8 +535,8 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/70_deploy_base_infrastructure.html" title="Deploy base infrastructure" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/workshop-terraform-modules/70_deploy_base_infrastructure.html">
@@ -613,7 +613,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base.html" title="Deploy DB into base infrastructure" class="dd-item
-        
+        parent
         
         
         ">
@@ -662,7 +662,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html" title="Deploy dB module" class="dd-item ">
+      <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html" title="Deploy dB module" class="dd-item active">
         <a href="/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html">
         Deploy dB module
         <i class="fas fa-check read-icon"></i>
@@ -755,7 +755,13 @@
             
           
           
-            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > Deploy base infrastructure
+            
+            
+          
+          
+            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/80_deploy_aurora_into_base.html'>Deploy DB into base infrastructure</a> > Deploy dB module
+          
+        
           
         
           
@@ -779,22 +785,11 @@
         
 
 
-
-	<p>In this module we will create the following resource via terraform:</p>
-<ul>
-<li>
-<p>Terraform Cloud Workspace via <strong>aws-quickstart/tfc_workspace/aws</strong> module</p>
-</li>
-<li>
-<p>AWS VPC via <strong>aws-quickstart/vpc/aws</strong> module</p>
-</li>
-</ul>
+<h3 id="terraform-apply">Terraform Apply</h3>
+<p><code>terraform apply -auto-approve</code></p>
 
 
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -1106,7 +1101,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1119,9 +1113,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1186,6 +1177,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1210,10 +1202,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/workshop-terraform-modules/60_setup_tf_inputs/61_setup_auto_tfvars.html" title="Setup auto tfvars"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html" title="Add dB module"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html" title="Setup TFC workspace" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/workshop-terraform-modules/10_getting_started.html" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1245,3 +1237,4 @@
 
   </body>
 </html>
+

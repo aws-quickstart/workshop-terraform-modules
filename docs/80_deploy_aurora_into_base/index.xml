@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deploy DB into base infrastructure on Terraform on AWS Workshop</title>
+    <link>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base.html</link>
+    <description>Recent content in Deploy DB into base infrastructure on Terraform on AWS Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add dB module</title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html</guid>
+      <description>Create tfvars files echo &amp;quot;db_vpc_id = $(terraform output vpc_id)&amp;quot; &amp;gt;db.auto.tfvars echo &amp;quot;password = \&amp;quot;db$(hostid)\&amp;quot;&amp;quot; &amp;gt;&amp;gt;db.auto.tfvars echo &amp;quot;region = us-east2&amp;quot; &amp;gt;&amp;gt;db.auto.tfvars cat db.auto.tfvars Create db.tf vi db.tf
+Copy to the code snip below into db.tf
+module &amp;quot;rds-aurora&amp;quot; { source = &amp;quot;aws-quickstart/rds-aurora/aws&amp;quot; version = &amp;quot;0.0.10&amp;quot; region = var.region vpc_id = var.db_vpc_id password = var.password } Create db_vars.tf vi db_vars.tf
+Copy to the code snip below into db_vars.tf
+ variable &amp;quot;db_vpc_id&amp;quot; { type = string description = &amp;quot;VPC id&amp;quot; default = &amp;quot;&amp;quot; } variable &amp;quot;password&amp;quot; { description = &amp;quot;Master DB password&amp;quot; type = string default = &amp;quot;&amp;quot; } </description>
+    </item>
+    
+    <item>
+      <title>Deploy dB module</title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html</guid>
+      <description>Terraform Apply terraform apply -auto-approve</description>
+    </item>
+    
+  </channel>
+</rss>
