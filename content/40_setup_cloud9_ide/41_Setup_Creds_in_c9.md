@@ -20,8 +20,6 @@ Copy the values for **AWS ACCESS KEY ID** and **AWS SECRET ACCESS KEY** from the
 
 - Set: Default OUTPUT FORMAT to : None (Just hit enter)
 
-_Expected Output:_
-![aws-creds1](/images/aws_creds1.png)
 
 ### Add AWS_REGION Variable to bash_profile
 
@@ -37,10 +35,6 @@ Use the __GetCallerIdentity__ cli command to validate that the Cloud9 IDE is usi
 ```
 aws sts get-caller-identity
 ```
-
-_Expected Output:_
-![aws-creds2](/images/aws_creds2.png)
-
 
 {{% notice tip %}}
 Leave Cloud9 open we will be using cloud9 through out this workshop
