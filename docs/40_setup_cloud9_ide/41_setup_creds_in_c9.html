@@ -12,21 +12,21 @@
     <title>Setup AWS Credentials :: Terraform on AWS Workshop</title>
 
     
-    <link href="/workshop-terraform-modules/css/nucleus.css?1620682853" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/fontawesome-all.min.css?1620682853" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/hybrid.css?1620682853" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/featherlight.min.css?1620682853" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/perfect-scrollbar.min.css?1620682853" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/auto-complete.css?1620682853" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/atom-one-dark-reasonable.css?1620682853" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/theme.css?1620682853" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/hugo-theme.css?1620682853" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/nucleus.css?1620684373" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/fontawesome-all.min.css?1620684373" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/hybrid.css?1620684373" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/featherlight.min.css?1620684373" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/perfect-scrollbar.min.css?1620684373" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/auto-complete.css?1620684373" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/atom-one-dark-reasonable.css?1620684373" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/theme.css?1620684373" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/hugo-theme.css?1620684373" rel="stylesheet">
     
-    <link href="/workshop-terraform-modules/css/theme-mine.css?1620682853" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/theme-mine.css?1620684373" rel="stylesheet">
     
     
 
-    <script src="/workshop-terraform-modules/js/jquery-3.3.1.min.js?1620682853"></script>
+    <script src="/workshop-terraform-modules/js/jquery-3.3.1.min.js?1620684373"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/workshop-terraform-modules/js/lunr.min.js?1620682853"></script>
-<script type="text/javascript" src="/workshop-terraform-modules/js/auto-complete.js?1620682853"></script>
+<script type="text/javascript" src="/workshop-terraform-modules/js/lunr.min.js?1620684373"></script>
+<script type="text/javascript" src="/workshop-terraform-modules/js/auto-complete.js?1620684373"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/aws-quickstart.github.io\/workshop-terraform-modules\/";
     
 </script>
-<script type="text/javascript" src="/workshop-terraform-modules/js/search.js?1620682853"></script>
+<script type="text/javascript" src="/workshop-terraform-modules/js/search.js?1620684373"></script>
 
     
   </div>
@@ -847,17 +847,13 @@
 <p>Set: Default OUTPUT FORMAT to : None (Just hit enter)</p>
 </li>
 </ul>
-<p><em>Expected Output:</em>
-<img src="/images/aws_creds1.png" alt="aws-creds1"></p>
 <h3 id="add-aws_region-variable-to-bash_profile">Add AWS_REGION Variable to bash_profile</h3>
 <pre><code>echo &quot;export AWS_REGION=us-west-2&quot; | tee -a ~/.bash_profile
 export AWS_REGION=us-west-2
 </code></pre><h3 id="validate-the-iam-user">Validate the IAM user</h3>
 <p>Use the <strong>GetCallerIdentity</strong> cli command to validate that the Cloud9 IDE is using the correct IAM user.</p>
 <pre><code>aws sts get-caller-identity
-</code></pre><p><em>Expected Output:</em>
-<img src="/images/aws_creds2.png" alt="aws-creds2"></p>
-
+</code></pre>
 <div class="notices tip" ><p>Leave Cloud9 open we will be using cloud9 through out this workshop</p>
 </div>
 
@@ -1324,19 +1320,19 @@ export AWS_REGION=us-west-2
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/workshop-terraform-modules/js/clipboard.min.js?1620682853"></script>
-    <script src="/workshop-terraform-modules/js/perfect-scrollbar.min.js?1620682853"></script>
-    <script src="/workshop-terraform-modules/js/perfect-scrollbar.jquery.min.js?1620682853"></script>
-    <script src="/workshop-terraform-modules/js/jquery.sticky.js?1620682853"></script>
-    <script src="/workshop-terraform-modules/js/featherlight.min.js?1620682853"></script>
-    <script src="/workshop-terraform-modules/js/highlight.pack.js?1620682853"></script>
+    <script src="/workshop-terraform-modules/js/clipboard.min.js?1620684373"></script>
+    <script src="/workshop-terraform-modules/js/perfect-scrollbar.min.js?1620684373"></script>
+    <script src="/workshop-terraform-modules/js/perfect-scrollbar.jquery.min.js?1620684373"></script>
+    <script src="/workshop-terraform-modules/js/jquery.sticky.js?1620684373"></script>
+    <script src="/workshop-terraform-modules/js/featherlight.min.js?1620684373"></script>
+    <script src="/workshop-terraform-modules/js/highlight.pack.js?1620684373"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/workshop-terraform-modules/js/modernizr.custom-3.6.0.js?1620682853"></script>
-    <script src="/workshop-terraform-modules/js/learn.js?1620682853"></script>
-    <script src="/workshop-terraform-modules/js/hugo-learn.js?1620682853"></script>
+    <script src="/workshop-terraform-modules/js/modernizr.custom-3.6.0.js?1620684373"></script>
+    <script src="/workshop-terraform-modules/js/learn.js?1620684373"></script>
+    <script src="/workshop-terraform-modules/js/hugo-learn.js?1620684373"></script>
     
         
-            <script src="/workshop-terraform-modules/mermaid/mermaid.js?1620682853"></script>
+            <script src="/workshop-terraform-modules/mermaid/mermaid.js?1620684373"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

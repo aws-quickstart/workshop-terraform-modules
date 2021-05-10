@@ -61,7 +61,9 @@ Review the environment settings and select Create environment.
 
 To ensure temporary credentials aren’t already in place we will also remove any existing credentials file:
 
-```rm -vf ${HOME}/.aws/credentials
+```
+rm -vf ${HOME}/.aws/credentials
+```
 
 
 
