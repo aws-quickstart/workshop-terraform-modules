@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/workshop-terraform-modules/images/favicon.png" type="image/png">
 
-    <title>AWS Account :: Terraform on AWS Workshop</title>
+    <title>Setup TFC API Token  :: Terraform on AWS Workshop</title>
 
     
     <link href="/workshop-terraform-modules/css/nucleus.css?1620682854" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop-terraform-modules/amp/10_getting_started/1_aws_account.html">
+  <body class="" data-url="/workshop-terraform-modules/amp/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -88,7 +88,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/10_getting_started.html" title="Getting Started" class="dd-item
-        parent
+        
         
         
         ">
@@ -116,7 +116,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/amp/10_getting_started/1_aws_account.html" title="AWS Account" class="dd-item active">
+      <li data-nav-id="/workshop-terraform-modules/amp/10_getting_started/1_aws_account.html" title="AWS Account" class="dd-item ">
         <a href="/workshop-terraform-modules/amp/10_getting_started/1_aws_account.html">
         AWS Account
         <i class="fas fa-check read-icon"></i>
@@ -343,7 +343,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide.html" title="Setup AWS Cloud9" class="dd-item
-        
+        parent
         
         
         ">
@@ -434,7 +434,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/amp/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html" title="Setup TFC API Token " class="dd-item ">
+      <li data-nav-id="/workshop-terraform-modules/amp/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html" title="Setup TFC API Token " class="dd-item active">
         <a href="/workshop-terraform-modules/amp/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html">
         Setup TFC API Token 
         <i class="fas fa-check read-icon"></i>
@@ -787,8 +787,6 @@
                         </a>
                     </span>
                   
-                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
-                  
                   <span class="links">
                  
                  
@@ -803,7 +801,7 @@
             
           
           
-            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/10_getting_started.html'>Getting Started</a> > AWS Account
+            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/40_setup_cloud9_ide.html'>Setup AWS Cloud9</a> > Setup TFC API Token 
           
         
           
@@ -814,17 +812,6 @@
                   </span>
                 </div>
                 
-                    <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#create-an-account">Create an account</a></li>
-  </ul>
-</nav>
-    </div>
-</div>
-
-                
               </div>
             </div>
             
@@ -832,63 +819,36 @@
         
         </div>
         
+          <div id="chapter">
+        
         <div id="body-inner">
-          
-            <h1>
-              
-              AWS Account
-            </h1>
           
 
         
 
 
-
-<div class="notices warning" ><p>You are responsible for the cost of the AWS services used while running this workshop in your AWS account.</p>
-</div>
-
-
-<div class="notices warning" ><p>Your account must have the ability to create new IAM roles and scope other IAM permissions.</p>
-</div>
-
-<h2 id="create-an-account">Create an account</h2>
-<ol>
-<li>
-<p>If you don&rsquo;t already have an AWS account with Administrator access: <a href="http://docs.aws.amazon.com/connect/latest/adminguide/gettingstarted.html#sign-up-for-aws">create
-one now</a></p>
-</li>
-<li>
-<p>Once you have an AWS account, ensure you are following the remaining workshop steps
-as an <strong>IAM user</strong> with administrator access to the AWS account:
-<a href="https://console.aws.amazon.com/iam/home?region=us-east-1#/users$new">Create a new IAM user to use for the workshop</a></p>
-</li>
-<li>
-<p>Enter the user details:
-<img src="images/iam-1-create-user.png" alt="Create User"></p>
-</li>
-<li>
-<p>Attach the AdministratorAccess IAM Policy:
-<img src="images/iam-2-attach-policy.png" alt="Attach Policy"></p>
-</li>
-<li>
-<p>Click to create the new user:
-<img src="images/iam-3-create-user.png" alt="Confirm User"></p>
-</li>
-<li>
-<p>Take note of the login URL and save:
-<img src="images/iam-4-save-url.png" alt="Login URL"></p>
-</li>
-</ol>
-
-<div class="notices info" ><p>Please continue to the next section.</p>
-</div>
-
+<h3 id="in-cloud9-terminal">In Cloud9 Terminal</h3>
+<p>Run <code>terraform login</code></p>
+<p><img src="images/terraform-login1.png" alt="terraform-login1"></p>
+<ul>
+<li>Confirm by typing <strong>yes</strong></li>
+</ul>
+<p>Paste the following url into your browser to continue <code>https://app.terraform.io/app/settings/tokens?source=terraform-login</code></p>
+<p><img src="images/terraform-login2.png" alt="terraform-login2"></p>
+<p>Click <strong>Create API token</strong></p>
+<p><img src="images/terraform-login3.png" alt="terraform-login3"></p>
+<p>Click <strong>to Copy API token to clipboard</strong></p>
+<p>Paste into you Cloud9 Terminal</p>
+<p>Expected output:
+<img src="images/terraform-login4.png" alt="terraform-login4"></p>
 
 
 <footer class="footline">
 	
 </footer>
 
+        
+            </div> 
         
         </div>
         
@@ -936,7 +896,6 @@ as an <strong>IAM user</strong> with administrator access to the AWS account:
             
                 
                     
-                    
                 
                 
 
@@ -955,9 +914,6 @@ as an <strong>IAM user</strong> with administrator access to the AWS account:
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1148,6 +1104,7 @@ as an <strong>IAM user</strong> with administrator access to the AWS account:
             
                 
                     
+                    
                 
                 
 
@@ -1166,6 +1123,9 @@ as an <strong>IAM user</strong> with administrator access to the AWS account:
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1331,10 +1291,10 @@ as an <strong>IAM user</strong> with administrator access to the AWS account:
 	 
 	 
 		
-			<a class="nav nav-prev" href="/workshop-terraform-modules/10_getting_started.html" title="Getting Started"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/workshop-terraform-modules/amp/40_setup_cloud9_ide/42_install_terraform_c9.html" title="Install Terraform in c9 "> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/workshop-terraform-modules/20_terraform_module_overview.html" title="Terraform Modules Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/workshop-terraform-modules/50_clone_module.html" title="Clone VPC Module" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

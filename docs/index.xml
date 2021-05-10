@@ -107,11 +107,22 @@ Copy the values for AWS ACCESS KEY ID and AWS SECRET ACCESS KEY from the AWS IAM
     </item>
     
     <item>
-      <title>Configure TFC Enviornment </title>
-      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/42_export_terraform_token.html</link>
+      <title>Install Terraform in c9 </title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/42_install_terraform_c9.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/42_export_terraform_token.html</guid>
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/42_install_terraform_c9.html</guid>
+      <description>In Cloud9 Terminal Install terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip
+Unzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip
+Remove zipfile sudo mv terraform /usr/local/bin</description>
+    </item>
+    
+    <item>
+      <title>Setup TFC API Token </title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html</guid>
       <description>In Cloud9 Terminal Run terraform login
  Confirm by typing yes  Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login
 Click Create API token

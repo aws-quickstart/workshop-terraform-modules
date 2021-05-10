@@ -98,8 +98,15 @@
 	"content": "In Cloud9 Terminal Run aws configure\nCopy the values for AWS ACCESS KEY ID and AWS SECRET ACCESS KEY from the AWS IAM Console. If you have accediently closed this tab you can find the credentials in the csv file that you downloaded in the Getting Started Section.\n   Set: AWS ACCESS KEY ID \u0026lt; Copy and Paste\n  Set: AWS SECRET ACCESS KEY \u0026lt; Copy and Paste\n  Set:Default REGION NAME to : us-west-2\n  Set: Default OUTPUT FORMAT to : None (Just hit enter)\n  Expected Output: Add AWS_REGION Variable to bash_profile echo \u0026quot;export AWS_REGION=us-west-2\u0026quot; | tee -a ~/.bash_profile export AWS_REGION=us-west-2 Validate the IAM user Use the GetCallerIdentity cli command to validate that the Cloud9 IDE is using the correct IAM user.\naws sts get-caller-identity Expected Output: Leave Cloud9 open we will be using cloud9 through out this workshop\n "
 },
 {
-	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/42_export_terraform_token.html",
-	"title": "Configure TFC Enviornment ",
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/42_install_terraform_c9.html",
+	"title": "Install Terraform in c9 ",
+	"tags": [],
+	"description": "",
+	"content": "In Cloud9 Terminal Install terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip\nUnzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip\nRemove zipfile sudo mv terraform /usr/local/bin\n"
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html",
+	"title": "Setup TFC API Token ",
 	"tags": [],
 	"description": "",
 	"content": "In Cloud9 Terminal Run terraform login\n Confirm by typing yes  Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login\nClick Create API token\nClick to Copy API token to clipboard\nPaste into you Cloud9 Terminal\nExpected output: "

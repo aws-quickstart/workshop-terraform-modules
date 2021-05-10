@@ -8,6 +8,7 @@ Go [here](https://us-east-2.console.aws.amazon.com/cloudshell)
 
 ![tr-register](images/start-cloud-shell.png)
 
+
 ## Install terraform
 
 #### Download terraform
