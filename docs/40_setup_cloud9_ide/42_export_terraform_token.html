@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/workshop-terraform-modules/images/favicon.png" type="image/png">
 
-    <title>Add dB module :: Terraform on AWS Workshop</title>
+    <title>Configure TFC Enviornment  :: Terraform on AWS Workshop</title>
 
     
     <link href="/workshop-terraform-modules/css/nucleus.css?1620680055" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html">
+  <body class="" data-url="/workshop-terraform-modules/40_setup_cloud9_ide/42_export_terraform_token.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -343,7 +343,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide.html" title="Setup AWS Cloud9" class="dd-item
-        
+        parent
         
         
         ">
@@ -413,7 +413,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide/42_export_terraform_token.html" title="Configure TFC Enviornment " class="dd-item ">
+      <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide/42_export_terraform_token.html" title="Configure TFC Enviornment " class="dd-item active">
         <a href="/workshop-terraform-modules/40_setup_cloud9_ide/42_export_terraform_token.html">
         Configure TFC Enviornment 
         <i class="fas fa-check read-icon"></i>
@@ -634,7 +634,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base.html" title="Deploy DB into base infrastructure" class="dd-item
-        parent
+        
         
         
         ">
@@ -662,7 +662,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html" title="Add dB module" class="dd-item active">
+      <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html" title="Add dB module" class="dd-item ">
         <a href="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html">
         Add dB module
         <i class="fas fa-check read-icon"></i>
@@ -780,7 +780,7 @@
             
           
           
-            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/80_deploy_aurora_into_base.html'>Deploy DB into base infrastructure</a> > Add dB module
+            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/40_setup_cloud9_ide.html'>Setup AWS Cloud9</a> > Configure TFC Enviornment 
           
         
           
@@ -806,37 +806,21 @@
         
 
 
-<h3 id="create-tfvars-files">Create tfvars files</h3>
-<pre><code>echo &quot;db_vpc_id = $(terraform output vpc_id)&quot; &gt;db.auto.tfvars
-echo &quot;password = \&quot;db$(hostid)\&quot;&quot; &gt;&gt;db.auto.tfvars
-echo &quot;region = us-east2&quot; &gt;&gt;db.auto.tfvars
-cat db.auto.tfvars
-</code></pre><h4 id="create-dbtf">Create db.tf</h4>
-<p><code>vi db.tf</code></p>
-<p>Copy to the code snip below into db.tf</p>
-<pre><code>module &quot;rds-aurora&quot; {
-  source         = &quot;aws-quickstart/rds-aurora/aws&quot;
-  version        = &quot;0.0.10&quot;
-  region         = var.region
-  vpc_id         = var.db_vpc_id
-  password       = var.password
-}
-</code></pre><h4 id="create-db_varstf">Create db_vars.tf</h4>
-<p><code>vi db_vars.tf</code></p>
-<p>Copy to the code snip below into db_vars.tf</p>
-<pre><code>
-variable &quot;db_vpc_id&quot; {
-  type        = string
-  description = &quot;VPC id&quot;
-  default     = &quot;&quot;
-}
+<h3 id="in-cloud9-terminal">In Cloud9 Terminal</h3>
+<p>Run <code>terraform login</code></p>
+<p><img src="images/terraform-login1.png" alt="terraform-login1"></p>
+<ul>
+<li>Confirm by typing <strong>yes</strong></li>
+</ul>
+<p>Paste the following url into your browser to continue <code>https://app.terraform.io/app/settings/tokens?source=terraform-login</code></p>
+<p><img src="images/terraform-login2.png" alt="terraform-login2"></p>
+<p>Click <strong>Create API token</strong></p>
+<p><img src="images/terraform-login3.png" alt="terraform-login3"></p>
+<p>Click <strong>to Copy API token to clipboard</strong></p>
+<p>Paste into you Cloud9 Terminal</p>
+<p>Expected output:
+<img src="images/terraform-login4.png" alt="terraform-login4"></p>
 
-variable &quot;password&quot; {
-  description = &quot;Master DB password&quot;
-  type        = string
-  default     = &quot;&quot;
-}
-</code></pre>
 
 <footer class="footline">
 	
@@ -1083,6 +1067,42 @@ variable &quot;password&quot; {
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -1158,38 +1178,6 @@ variable &quot;password&quot; {
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -1227,7 +1215,6 @@ variable &quot;password&quot; {
             
                 
                     
-                    
                 
                 
 
@@ -1243,9 +1230,6 @@ variable &quot;password&quot; {
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1270,10 +1254,10 @@ variable &quot;password&quot; {
 	 
 	 
 		
-			<a class="nav nav-prev" href="/workshop-terraform-modules/80_deploy_aurora_into_base.html" title="Deploy DB into base infrastructure"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/workshop-terraform-modules/40_setup_cloud9_ide/41_setup_creds_in_c9.html" title="Setup AWS Credentials"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html" title="Deploy dB module" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/workshop-terraform-modules/50_clone_module.html" title="Clone VPC Module" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/workshop-terraform-modules/images/favicon.png" type="image/png">
 
-    <title>Add dB module :: Terraform on AWS Workshop</title>
+    <title>Setup Cloud9 :: Terraform on AWS Workshop</title>
 
     
     <link href="/workshop-terraform-modules/css/nucleus.css?1620680055" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html">
+  <body class="" data-url="/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud9.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -343,7 +343,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide.html" title="Setup AWS Cloud9" class="dd-item
-        
+        parent
         
         
         ">
@@ -371,7 +371,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud9.html" title="Setup Cloud9" class="dd-item ">
+      <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud9.html" title="Setup Cloud9" class="dd-item active">
         <a href="/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud9.html">
         Setup Cloud9
         <i class="fas fa-check read-icon"></i>
@@ -634,7 +634,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base.html" title="Deploy DB into base infrastructure" class="dd-item
-        parent
+        
         
         
         ">
@@ -662,7 +662,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html" title="Add dB module" class="dd-item active">
+      <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html" title="Add dB module" class="dd-item ">
         <a href="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html">
         Add dB module
         <i class="fas fa-check read-icon"></i>
@@ -780,7 +780,7 @@
             
           
           
-            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/80_deploy_aurora_into_base.html'>Deploy DB into base infrastructure</a> > Add dB module
+            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/40_setup_cloud9_ide.html'>Setup AWS Cloud9</a> > Setup Cloud9
           
         
           
@@ -806,36 +806,60 @@
         
 
 
-<h3 id="create-tfvars-files">Create tfvars files</h3>
-<pre><code>echo &quot;db_vpc_id = $(terraform output vpc_id)&quot; &gt;db.auto.tfvars
-echo &quot;password = \&quot;db$(hostid)\&quot;&quot; &gt;&gt;db.auto.tfvars
-echo &quot;region = us-east2&quot; &gt;&gt;db.auto.tfvars
-cat db.auto.tfvars
-</code></pre><h4 id="create-dbtf">Create db.tf</h4>
-<p><code>vi db.tf</code></p>
-<p>Copy to the code snip below into db.tf</p>
-<pre><code>module &quot;rds-aurora&quot; {
-  source         = &quot;aws-quickstart/rds-aurora/aws&quot;
-  version        = &quot;0.0.10&quot;
-  region         = var.region
-  vpc_id         = var.db_vpc_id
-  password       = var.password
-}
-</code></pre><h4 id="create-db_varstf">Create db_vars.tf</h4>
-<p><code>vi db_vars.tf</code></p>
-<p>Copy to the code snip below into db_vars.tf</p>
-<pre><code>
-variable &quot;db_vpc_id&quot; {
-  type        = string
-  description = &quot;VPC id&quot;
-  default     = &quot;&quot;
-}
+<h1 id="starting-aws-cloud9-ide">Starting AWS Cloud9 IDE</h1>
+<p>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes pre-packaged with essential tools for popular programming languages and the AWS Command Line Interface (CLI) pre-installed so you don’t need to install files or configure your laptop for this workshop.</p>
 
-variable &quot;password&quot; {
-  description = &quot;Master DB password&quot;
-  type        = string
-  default     = &quot;&quot;
-}
+<div class="notices tip" ><p>Cloud9 works best with Chrome or Firefox, <em>Not Safari</em>. This workshop is not supported on a tablet.</p>
+</div>
+
+<p>From the AWS Management Console, Select <strong>Services &gt; Cloud9</strong> under Developer Tools</p>
+<p>Go <a href="https://us-east-1.console.aws.amazon.com/cloud9/home/product">Click here for deeplink to Cloud9</a></p>
+<p><img src="images/c9-step1.png" alt="c9.1"></p>
+<ul>
+<li>
+<p>Select Create Environment.</p>
+</li>
+<li>
+<p>Enter tf-workshop into Name and optionally provide a Description.</p>
+</li>
+</ul>
+<p><img src="images/c9-step2.png" alt="c9.2"></p>
+<p>Select <strong>Next step</strong>.</p>
+<h2 id="c9-launch-settings">c9 Launch settings:</h2>
+<ul>
+<li>
+<p>Set the Instance type to <strong>t2.small</strong> (1 GiB RAM + 1 vCPU).</p>
+</li>
+<li>
+<p>Leave all other defaults unchanged.</p>
+</li>
+</ul>
+<p><img src="images/c9-step3.png" alt="c9.3"></p>
+<p>Select <strong>Next step</strong></p>
+<p>Review the environment settings and select Create environment.</p>
+<blockquote>
+<p>It will take a couple of minutes for your Cloud9 environment to be provisioned and prepared.</p>
+</blockquote>
+<h2 id="c9-environment-settings">c9 Environment settings:</h2>
+<p><img src="images/c9-step4.png" alt="c9.4"></p>
+<ul>
+<li>Once ready, your IDE will open to a welcome screen. Below that, you should see a terminal prompt. Close the Welcome tab and drag up the terminal window to give yourself more space to work in.</li>
+</ul>
+<h3 id="configure-aws-credentials-for-your-cloud9-workspace">Configure AWS credentials for your Cloud9 Workspace</h3>
+<p><strong>Click</strong> on the Cloud9 logo in the top left corner</p>
+<ul>
+<li>Choose Preferences</li>
+</ul>
+<p><img src="images/c9-step5.png" alt="c9.4"></p>
+<ul>
+<li>In the Preferences tab got to AWS Settings</li>
+<li>Turn off AWS managed temporary credentials</li>
+<li>Close the Preferences tab</li>
+</ul>
+<p>To ensure temporary credentials aren’t already in place we will also remove any existing credentials file:</p>
+<pre><code class="language-rm" data-lang="rm">
+
+
 </code></pre>
 
 <footer class="footline">
@@ -1051,21 +1075,6 @@ variable &quot;password&quot; {
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1083,24 +1092,8 @@ variable &quot;password&quot; {
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -1109,6 +1102,9 @@ variable &quot;password&quot; {
                     
                     
 
+                    
+            
+        
                     
                         
             
@@ -1190,6 +1186,38 @@ variable &quot;password&quot; {
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1227,7 +1255,6 @@ variable &quot;password&quot; {
             
                 
                     
-                    
                 
                 
 
@@ -1243,9 +1270,6 @@ variable &quot;password&quot; {
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1270,10 +1294,10 @@ variable &quot;password&quot; {
 	 
 	 
 		
-			<a class="nav nav-prev" href="/workshop-terraform-modules/80_deploy_aurora_into_base.html" title="Deploy DB into base infrastructure"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/workshop-terraform-modules/40_setup_cloud9_ide.html" title="Setup AWS Cloud9"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html" title="Deploy dB module" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/workshop-terraform-modules/40_setup_cloud9_ide/41_setup_creds_in_c9.html" title="Setup AWS Credentials" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

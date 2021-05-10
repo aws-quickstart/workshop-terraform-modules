@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/workshop-terraform-modules/images/favicon.png" type="image/png">
 
-    <title>Add dB module :: Terraform on AWS Workshop</title>
+    <title>Setup AWS Credentials :: Terraform on AWS Workshop</title>
 
     
     <link href="/workshop-terraform-modules/css/nucleus.css?1620680055" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html">
+  <body class="" data-url="/workshop-terraform-modules/40_setup_cloud9_ide/41_setup_creds_in_c9.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -343,7 +343,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide.html" title="Setup AWS Cloud9" class="dd-item
-        
+        parent
         
         
         ">
@@ -392,7 +392,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide/41_setup_creds_in_c9.html" title="Setup AWS Credentials" class="dd-item ">
+      <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide/41_setup_creds_in_c9.html" title="Setup AWS Credentials" class="dd-item active">
         <a href="/workshop-terraform-modules/40_setup_cloud9_ide/41_setup_creds_in_c9.html">
         Setup AWS Credentials
         <i class="fas fa-check read-icon"></i>
@@ -634,7 +634,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base.html" title="Deploy DB into base infrastructure" class="dd-item
-        parent
+        
         
         
         ">
@@ -662,7 +662,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html" title="Add dB module" class="dd-item active">
+      <li data-nav-id="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html" title="Add dB module" class="dd-item ">
         <a href="/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html">
         Add dB module
         <i class="fas fa-check read-icon"></i>
@@ -780,7 +780,7 @@
             
           
           
-            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/80_deploy_aurora_into_base.html'>Deploy DB into base infrastructure</a> > Add dB module
+            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/40_setup_cloud9_ide.html'>Setup AWS Cloud9</a> > Setup AWS Credentials
           
         
           
@@ -806,37 +806,41 @@
         
 
 
-<h3 id="create-tfvars-files">Create tfvars files</h3>
-<pre><code>echo &quot;db_vpc_id = $(terraform output vpc_id)&quot; &gt;db.auto.tfvars
-echo &quot;password = \&quot;db$(hostid)\&quot;&quot; &gt;&gt;db.auto.tfvars
-echo &quot;region = us-east2&quot; &gt;&gt;db.auto.tfvars
-cat db.auto.tfvars
-</code></pre><h4 id="create-dbtf">Create db.tf</h4>
-<p><code>vi db.tf</code></p>
-<p>Copy to the code snip below into db.tf</p>
-<pre><code>module &quot;rds-aurora&quot; {
-  source         = &quot;aws-quickstart/rds-aurora/aws&quot;
-  version        = &quot;0.0.10&quot;
-  region         = var.region
-  vpc_id         = var.db_vpc_id
-  password       = var.password
-}
-</code></pre><h4 id="create-db_varstf">Create db_vars.tf</h4>
-<p><code>vi db_vars.tf</code></p>
-<p>Copy to the code snip below into db_vars.tf</p>
-<pre><code>
-variable &quot;db_vpc_id&quot; {
-  type        = string
-  description = &quot;VPC id&quot;
-  default     = &quot;&quot;
-}
+<h2 id="in-cloud9-terminal">In Cloud9 Terminal</h2>
+<p>Run <code>aws configure</code></p>
 
-variable &quot;password&quot; {
-  description = &quot;Master DB password&quot;
-  type        = string
-  default     = &quot;&quot;
-}
-</code></pre>
+<div class="notices tip" ><p>Copy the values for <strong>AWS ACCESS KEY ID</strong> and <strong>AWS SECRET ACCESS KEY</strong> from the AWS IAM Console. If you have accediently closed this tab you can find the credentials in the csv file that you downloaded in the <strong>Getting Started</strong> Section.</p>
+</div>
+
+<ul>
+<li>
+<p>Set: AWS ACCESS KEY ID &lt; Copy and Paste</p>
+</li>
+<li>
+<p>Set: AWS SECRET ACCESS KEY &lt; Copy and Paste</p>
+</li>
+<li>
+<p>Set:Default REGION NAME to : us-west-2</p>
+</li>
+<li>
+<p>Set: Default OUTPUT FORMAT to : None (Just hit enter)</p>
+</li>
+</ul>
+<p><em>Expected Output:</em>
+<img src="/images/aws_creds1.png" alt="aws-creds1"></p>
+<h3 id="add-aws_region-variable-to-bash_profile">Add AWS_REGION Variable to bash_profile</h3>
+<pre><code>echo &quot;export AWS_REGION=us-west-2&quot; | tee -a ~/.bash_profile
+export AWS_REGION=us-west-2
+</code></pre><h3 id="validate-the-iam-user">Validate the IAM user</h3>
+<p>Use the <strong>GetCallerIdentity</strong> cli command to validate that the Cloud9 IDE is using the correct IAM user.</p>
+<pre><code>aws sts get-caller-identity
+</code></pre><p><em>Expected Output:</em>
+<img src="/images/aws_creds2.png" alt="aws-creds2"></p>
+
+<div class="notices tip" ><p>Leave Cloud9 open we will be using cloud9 through out this workshop</p>
+</div>
+
+
 
 <footer class="footline">
 	
@@ -1067,6 +1071,7 @@ variable &quot;password&quot; {
             
                 
                     
+                    
                 
                 
 
@@ -1083,37 +1088,8 @@ variable &quot;password&quot; {
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1190,6 +1166,38 @@ variable &quot;password&quot; {
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1227,7 +1235,6 @@ variable &quot;password&quot; {
             
                 
                     
-                    
                 
                 
 
@@ -1243,9 +1250,6 @@ variable &quot;password&quot; {
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1270,10 +1274,10 @@ variable &quot;password&quot; {
 	 
 	 
 		
-			<a class="nav nav-prev" href="/workshop-terraform-modules/80_deploy_aurora_into_base.html" title="Deploy DB into base infrastructure"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud9.html" title="Setup Cloud9"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html" title="Deploy dB module" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/workshop-terraform-modules/40_setup_cloud9_ide/42_export_terraform_token.html" title="Configure TFC Enviornment " style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
