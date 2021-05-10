@@ -85,26 +85,21 @@ The example below show how to use versioning</description>
     </item>
     
     <item>
-      <title>Install terraform in AWS cloud shell</title>
-      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html</link>
+      <title>Setup Cloud9</title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud_shell.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html</guid>
-      <description>Go here
-Install terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip
-Unzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip
-Create home/usr/bin mkdir -p $HOME/.usr/bin
-Add terraform to path echo &amp;quot;PATH=\$PATH:\$HOME/.usr/bin&amp;quot; &amp;gt;&amp;gt;~/.bashrc
-Restart shell exec bash
-Remove zipfile rm terraform_0.15.1_linux_amd64.zip</description>
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud_shell.html</guid>
+      <description>Starting AWS Cloud9 IDE AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes pre-packaged with essential tools for popular programming languages and the AWS Command Line Interface (CLI) pre-installed so you don’t need to install files or configure your laptop for this workshop.
+Cloud9 works best with Chrome or Firefox, Not Safari.</description>
     </item>
     
     <item>
       <title>Configure Terraform Env </title>
-      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html</link>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/41_export_terraform_token.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html</guid>
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/41_export_terraform_token.html</guid>
       <description>  In CloudShell
  Run terraform login
 Confirm by typing yes

@@ -77,21 +77,21 @@
 	"content": "Getting Started If you have a existing terraform cloud account you can skip the registeration\n "
 },
 {
-	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html",
-	"title": "Install terraform in AWS cloud shell",
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide.html",
+	"title": "Setup AWS Cloud9",
 	"tags": [],
 	"description": "",
-	"content": "Go here\nInstall terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip\nUnzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip\nCreate home/usr/bin mkdir -p $HOME/.usr/bin\nAdd terraform to path echo \u0026quot;PATH=\\$PATH:\\$HOME/.usr/bin\u0026quot; \u0026gt;\u0026gt;~/.bashrc\nRestart shell exec bash\nRemove zipfile rm terraform_0.15.1_linux_amd64.zip\n"
+	"content": "In this lab we are going to start an AWS Cloud9 ide session.\nWe will use this env execute this workshop.\n"
 },
 {
-	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell.html",
-	"title": "Setup AWS CloudShell",
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud_shell.html",
+	"title": "Setup Cloud9",
 	"tags": [],
 	"description": "",
-	"content": "In this lab we are going to start an AWS CloudShell. We will use this env execute this workshop.\n"
+	"content": "Starting AWS Cloud9 IDE AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes pre-packaged with essential tools for popular programming languages and the AWS Command Line Interface (CLI) pre-installed so you don’t need to install files or configure your laptop for this workshop.\nCloud9 works best with Chrome or Firefox, Not Safari. This workshop is not supported on a tablet.\n From the AWS Management Console, Select Services \u0026gt; Cloud9 under Developer Tools\nGo Click here for deeplink to Cloud9\n  Select Create Environment.\n  Enter tf-workshop into Name and optionally provide a Description.\n  Select Next step.\nc9 Launch settings:   Set the Instance type to t2.small (1 GiB RAM + 1 vCPU).\n  Leave all other defaults unchanged.\n  Select Next step\nReview the environment settings and select Create environment.\n It will take a couple of minutes for your Cloud9 environment to be provisioned and prepared.\n c9 Environment settings:  Once ready, your IDE will open to a welcome screen. Below that, you should see a terminal prompt. Close the Welcome tab and drag up the terminal window to give yourself more space to work in.  Configure AWS credentials for your Cloud9 Workspace Click on the Cloud9 logo in the top left corner\n Choose Preferences   In the Preferences tab got to AWS Settings Turn off AWS managed temporary credentials Close the Preferences tab  To ensure temporary credentials aren’t already in place we will also remove any existing credentials file:\n"
 },
 {
-	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html",
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/41_export_terraform_token.html",
 	"title": "Configure Terraform Env ",
 	"tags": [],
 	"description": "",

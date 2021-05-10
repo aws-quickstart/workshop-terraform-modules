@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/workshop-terraform-modules/images/favicon.png" type="image/png">
 
-    <title>Setup TFC workspace :: Terraform on AWS Workshop</title>
+    <title>Setup AWS Cloud9 :: Terraform on AWS Workshop</title>
 
     
     <link href="/workshop-terraform-modules/css/nucleus.css?1620678421" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html">
+  <body class="" data-url="/workshop-terraform-modules/40_setup_cloud9_ide.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -343,8 +343,8 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide.html" title="Setup AWS Cloud9" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/workshop-terraform-modules/40_setup_cloud9_ide.html">
@@ -535,7 +535,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/70_deploy_base_infrastructure.html" title="Deploy base infrastructure" class="dd-item
-        parent
+        
         
         
         ">
@@ -563,7 +563,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html" title="Setup TFC workspace" class="dd-item active">
+      <li data-nav-id="/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html" title="Setup TFC workspace" class="dd-item ">
         <a href="/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html">
         Setup TFC workspace
         <i class="fas fa-check read-icon"></i>
@@ -755,13 +755,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/70_deploy_base_infrastructure.html'>Deploy base infrastructure</a> > Setup TFC workspace
-          
-        
+            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > Setup AWS Cloud9
           
         
           
@@ -785,29 +779,15 @@
         
 
 
-<h4 id="setup-terraform-workspace">Setup Terraform workspace</h4>
-<ul>
-<li>Change directory to the root directory.</li>
-</ul>
-<p><code>cd terraform-aws-vpc/</code></p>
-<ul>
-<li>Change to deploy directory</li>
-</ul>
-<p><code>cd setup_workspace</code>.</p>
-<h4 id="execute-terraform">Execute terraform</h4>
-<ul>
-<li>Run to following commands in order:</li>
-</ul>
-<p><code>terraform init</code></p>
-<h4 id="export-terraform-config-location">Export Terraform Config Location</h4>
-<p><code> export TERRAFORM_CONFIG=&quot;$HOME/.terraform.d/credentials.tfrc.json&quot;</code></p>
-<p><code>terraform apply  -var-file=&quot;$HOME/terraform.tfvars&quot;</code>.</p>
-<h4 id="change-to-the-deploy-folder">Change to the deploy folder</h4>
-<p><code>cd ../deploy</code></p>
-<p><code>terraform apply -auto-approve</code></p>
+
+	<p>In this lab we are going to start an AWS Cloud9 ide session.</p>
+<p>We will use this env execute this workshop.</p>
 
 
-<footer class="footline">
+
+
+
+<footer class=" footline" >
 	
 </footer>
 
@@ -1007,6 +987,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1019,6 +1000,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1132,7 +1116,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1148,9 +1131,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1223,10 +1203,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/workshop-terraform-modules/70_deploy_base_infrastructure.html" title="Deploy base infrastructure"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/workshop-terraform-modules/30_create_terraform_cloud_account/13_register.html" title="Select Trail Plan"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/workshop-terraform-modules/70_deploy_base_infrastructure/72_deploy_vpc.html" title="Deploy VPC into TFC" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud_shell.html" title="Setup Cloud9" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1258,4 +1238,3 @@
 
   </body>
 </html>
-

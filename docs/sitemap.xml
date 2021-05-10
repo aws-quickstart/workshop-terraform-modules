@@ -24,11 +24,11 @@
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account.html</loc>
   </url><url>
-    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/40_start_cloud_shell.html</loc>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide.html</loc>
   </url><url>
-    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell.html</loc>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud_shell.html</loc>
   </url><url>
-    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloudshell/41_export_terraform_token.html</loc>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/41_export_terraform_token.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module.html</loc>
   </url><url>

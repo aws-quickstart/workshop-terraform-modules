@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup AWS Cloud9 on Terraform on AWS Workshop</title>
+    <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide.html</link>
+    <description>Recent content in Setup AWS Cloud9 on Terraform on AWS Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Cloud9</title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud_shell.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/40_start_cloud_shell.html</guid>
+      <description>Starting AWS Cloud9 IDE AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes pre-packaged with essential tools for popular programming languages and the AWS Command Line Interface (CLI) pre-installed so you don’t need to install files or configure your laptop for this workshop.
+Cloud9 works best with Chrome or Firefox, Not Safari.</description>
+    </item>
+    
+    <item>
+      <title>Configure Terraform Env </title>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/41_export_terraform_token.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/41_export_terraform_token.html</guid>
+      <description>  In CloudShell
+ Run terraform login
+Confirm by typing yes
+Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login
+Click Create API token
+Click to Copy API token to clipboard
+Paste into you CloudShell
+Expected output: </description>
+    </item>
+    
+  </channel>
+</rss>
