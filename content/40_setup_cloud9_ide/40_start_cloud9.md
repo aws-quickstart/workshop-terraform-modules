@@ -28,7 +28,7 @@ Select **Next step**.
 
 ## c9 Launch settings:
 
-- Set the Instance type to **t2.small** (1 GiB RAM + 1 vCPU).
+- Set the Instance type to **t2.micro** (1 GiB RAM + 1 vCPU).
 
 - Leave all other defaults unchanged.
 
@@ -55,7 +55,7 @@ Review the environment settings and select Create environment.
 
 ![c9.4](images/c9-step5.png)
 
-  - In the Preferences tab got to AWS Settings
+  - In the Preferences tab go to AWS Settings
   - Turn off AWS managed temporary credentials
   - Close the Preferences tab
 

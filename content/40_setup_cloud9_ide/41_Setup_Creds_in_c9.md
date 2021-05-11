@@ -16,7 +16,7 @@ Copy the values for **AWS ACCESS KEY ID** and **AWS SECRET ACCESS KEY** from the
 
 - Set: AWS SECRET ACCESS KEY < Copy and Paste
 
-- Set:Default REGION NAME to : us-west-2
+- Set:Default REGION NAME to : us-east-1
 
 - Set: Default OUTPUT FORMAT to : None (Just hit enter)
 
@@ -24,8 +24,8 @@ Copy the values for **AWS ACCESS KEY ID** and **AWS SECRET ACCESS KEY** from the
 ### Add AWS_REGION Variable to bash_profile
 
 ```
-echo "export AWS_REGION=us-west-2" | tee -a ~/.bash_profile
-export AWS_REGION=us-west-2
+echo "export AWS_REGION=us-east-1" | tee -a ~/.bash_profile
+export AWS_REGION=us-east-1
 ```
 
 ### Validate the IAM user
