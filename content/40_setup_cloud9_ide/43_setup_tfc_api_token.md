@@ -16,11 +16,17 @@ Paste the following url into your browser to continue `https://app.terraform.io/
 
 ![terraform-login2](images/terraform-login2.png)
 
+
 Click **Create API token** 
 
 ![terraform-login3](images/terraform-login3.png)
 
 Click **to Copy API token to clipboard** 
+
+{{% notice warning %}}
+You will not see visual indications while pasting the token
+{{% /notice %}} 
+
 
 Paste into you Cloud9 Terminal
 

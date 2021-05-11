@@ -98,11 +98,11 @@
 	"content": "In Cloud9 Terminal Install terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip\nUnzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip\nAdd terraform to /usr/local/bin sudo mv terraform /usr/local/bin\n"
 },
 {
-	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html",
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_token.html",
 	"title": "Setup TFC API Token ",
 	"tags": [],
 	"description": "",
-	"content": "In Cloud9 Terminal Run terraform login\n Confirm by typing yes  Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login\nClick Create API token\nClick to Copy API token to clipboard\nPaste into you Cloud9 Terminal\nExpected output: "
+	"content": "In Cloud9 Terminal Run terraform login\n Confirm by typing yes  Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login\nClick Create API token\nClick to Copy API token to clipboard\nNOTE: You will not see visual indications while pasting the token\nPaste into you Cloud9 Terminal\nExpected output: "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module.html",

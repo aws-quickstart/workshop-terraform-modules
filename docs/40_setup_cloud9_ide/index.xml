@@ -41,14 +41,15 @@ Add terraform to /usr/local/bin sudo mv terraform /usr/local/bin</description>
     
     <item>
       <title>Setup TFC API Token </title>
-      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html</link>
+      <link>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_token.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html</guid>
+      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_token.html</guid>
       <description>In Cloud9 Terminal Run terraform login
  Confirm by typing yes  Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login
 Click Create API token
 Click to Copy API token to clipboard
+NOTE: You will not see visual indications while pasting the token
 Paste into you Cloud9 Terminal
 Expected output: </description>
     </item>
