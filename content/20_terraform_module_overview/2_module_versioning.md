@@ -6,8 +6,8 @@ weight = 3
 
 ## Module Versioning
 
-When using AWS Modules we recommend locking to version while calling the module. This ensure that updates only happen when convenient to you. 
+When using AWS Modules we recommend locking to version while calling the module. This ensures that updates only happen when convenient to you. 
 
-The example below show how to use versioning
+The example below shows how to use versioning.
 
 ![module-version](images/module-version.png)
