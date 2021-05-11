@@ -67,7 +67,7 @@
 	"title": "Terraform Modules Overview",
 	"tags": [],
 	"description": "",
-	"content": "What are modules in terraform ? Terraform modules are a collection of .tf files that are used together to deploy a resource. A module typically consists of Root modules with in a root modules you can also call child modules. Bellow is an example of a module.\nIn this workshop we will use 3 modules (workspace/vpc/db) to build a tf deployment. The module we will reference are opensourced. They part of a catalog of modules published on AWS Infrastructure and Automation cataglog.\n A link to the AWS Terraform Modules Catalog is provided in the navigation bar to the left of your screen\n "
+	"content": "What are modules in terraform ? Terraform modules are a collection of .tf files that are used together to deploy a resource. A Terraform configuration contains at least one module (root module). When a root module calls another module, it is often known as a child module. Below is an example of a module.\nIn this workshop we will use 3 modules (workspace/vpc/db) to build a tf deployment. The module we referenced is open-sourced. They part of a catalog of modules published on AWS Infrastructure and Automation catalog.\n A link to the AWS Terraform Modules Catalog is provided in the navigation bar to the left of your screen\n "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account.html",

@@ -40,9 +40,6 @@ as an **IAM user** with administrator access to the AWS account:
 
 Do not close this windows without recording you **AWS_ACCESS_KEY** and **AWS_SECRET_ACCESS**
 
-
-
-
 {{% notice info %}}
 Please continue to the next section.
 {{% /notice %}}
