@@ -21,8 +21,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/2_module_versioning.html</guid>
-      <description>Module Versioning When using AWS Modules we recommend locking to version while calling the module. This ensure that updates only happen when convenient to you.
-The example below show how to use versioning</description>
+      <description>Module Versioning When using AWS Modules we recommend locking to version while calling the module. This ensures that updates only happen when convenient to you.
+The example below shows how to use versioning.</description>
     </item>
     
   </channel>

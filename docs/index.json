@@ -25,7 +25,7 @@
 	"title": "Module Versioning",
 	"tags": [],
 	"description": "",
-	"content": "Module Versioning When using AWS Modules we recommend locking to version while calling the module. This ensure that updates only happen when convenient to you.\nThe example below show how to use versioning\n"
+	"content": "Module Versioning When using AWS Modules we recommend locking to version while calling the module. This ensures that updates only happen when convenient to you.\nThe example below shows how to use versioning.\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/10_getting_started.html",
