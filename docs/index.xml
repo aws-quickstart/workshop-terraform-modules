@@ -104,7 +104,7 @@ Copy the values for AWS ACCESS KEY ID and AWS SECRET ACCESS KEY from the AWS IAM
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/42_install_terraform_c9.html</guid>
       <description>In Cloud9 Terminal Install terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip
 Unzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip
-Remove zipfile sudo mv terraform /usr/local/bin</description>
+Add terraform to /usr/local/bin sudo mv terraform /usr/local/bin</description>
     </item>
     
     <item>

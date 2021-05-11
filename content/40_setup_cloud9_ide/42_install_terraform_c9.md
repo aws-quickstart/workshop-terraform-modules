@@ -13,6 +13,6 @@ weight = 42
 #### Unzip terraform binaries
 `unzip terraform_0.15.1_linux_amd64.zip`
 
-#### Remove zipfile
-`sudo mv  terraform /usr/local/bin`
+#### Add terraform to /usr/local/bin
+`sudo mv terraform /usr/local/bin`
 

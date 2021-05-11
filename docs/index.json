@@ -95,7 +95,7 @@
 	"title": "Install Terraform in c9 ",
 	"tags": [],
 	"description": "",
-	"content": "In Cloud9 Terminal Install terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip\nUnzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip\nRemove zipfile sudo mv terraform /usr/local/bin\n"
+	"content": "In Cloud9 Terminal Install terraform Download terraform wget https://releases.hashicorp.com/terraform/0.15.1/terraform_0.15.1_linux_amd64.zip\nUnzip terraform binaries unzip terraform_0.15.1_linux_amd64.zip\nAdd terraform to /usr/local/bin sudo mv terraform /usr/local/bin\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_tokem.html",
