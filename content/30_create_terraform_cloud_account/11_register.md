@@ -8,9 +8,8 @@ weight = 11
 
 ![tr-register1](images/tf_register2.png)
 
-- Name your org eg: __aws-devops-workshop-__ with your gitlab userid appended.
 
-Example: aws-devops-workshop-tonynv
+Example: tf-workshop
 
 - Provide a Email address
 

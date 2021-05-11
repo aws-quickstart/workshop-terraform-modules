@@ -28,30 +28,19 @@
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/11_register.html</guid>
       <description>##Create Terraform organization
- Name your org eg: aws-devops-workshop- with your gitlab userid appended.  Example: aws-devops-workshop-tonynv
+Example: tf-workshop
   Provide a Email address
   Click Create organization
   </description>
     </item>
     
     <item>
-      <title>Start Trail</title>
+      <title>Start Trial</title>
       <link>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/12_register.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/12_register.html</guid>
-      <description>Click Upgrade Now</description>
-    </item>
-    
-    <item>
-      <title>Select Trail Plan</title>
-      <link>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/13_register.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/13_register.html</guid>
-      <description>Choose Trial Plan
-  Start your free trial
-  Expected Output:</description>
+      <description>Click Upgrade Now to get access to the trial version and leverage all of the features from Terraform that will be used in the lab.</description>
     </item>
     
   </channel>
