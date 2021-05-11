@@ -11,7 +11,7 @@
 	"title": "AWS Account",
 	"tags": [],
 	"description": "",
-	"content": " You are responsible for the cost of the AWS services used while running this workshop in your AWS account.\n Your account must have the ability to create new IAM roles and scope other IAM permissions.\n Create an account   If you don\u0026rsquo;t already have an AWS account with Administrator access: create one now\n  Once you have an AWS account, ensure you are following the remaining workshop steps as an IAM user with administrator access to the AWS account: Create a new IAM user to use for the workshop\n  Enter the user details:   Attach the AdministratorAccess IAM Policy:   Click to create the new user:   Take note of the login URL and save:   Please continue to the next section.\n "
+	"content": " You are responsible for the cost of the AWS services used while running this workshop in your AWS account.\n Your account must have the ability to create new IAM roles and scope other IAM permissions.\n Create an account   If you don\u0026rsquo;t already have an AWS account with Administrator access: create one now\n  Once you have an AWS account, ensure you are following the remaining workshop steps as an IAM user with administrator access to the AWS account: Create a new IAM user to use for the workshop\n  Enter the user details:   Do not close this windows without recording you AWS_ACCESS_KEY and AWS_SECRET_ACCESS\nPlease continue to the next section.\n "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/20_terraform_module_overview/1_module_stucture.html",
