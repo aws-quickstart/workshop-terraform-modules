@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/60_setup_tf_inputs/61_setup_auto_tfvars.html</guid>
-      <description>Configure your tfvars file vi $HOME/terraform.tfvars
+      <description>Configure your tfvars file touch $HOME/enviornment/terraform.tfvars
 Create a file that contains the inputs for the vpc module
 Setup module inputs AWS_ACCESS_KEY_ID = &amp;quot;*********************&amp;quot; AWS_SECRET_ACCESS_KEY = &amp;quot;*********************&amp;quot; tfe_organization = &amp;quot;the-org-name-you-created&amp;quot; tfe_email = &amp;quot;someone@companyx.com&amp;quot; region = &amp;quot;us-east-2&amp;quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended
  %</description>

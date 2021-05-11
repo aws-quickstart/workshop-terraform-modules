@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/workshop-terraform-modules/images/favicon.png" type="image/png">
 
-    <title>AWS Terraform Workshop :: Terraform on AWS Workshop</title>
+    <title>Setup TFC API Token  :: Terraform on AWS Workshop</title>
 
     
     <link href="/workshop-terraform-modules/css/nucleus.css?1620775158" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop-terraform-modules/">
+  <body class="" data-url="/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_token.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -322,7 +322,7 @@
   
     
     <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide.html" title="Setup AWS Cloud9" class="dd-item
-        
+        parent
         
         
         ">
@@ -413,7 +413,7 @@
  
   
     
-      <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_token.html" title="Setup TFC API Token " class="dd-item ">
+      <li data-nav-id="/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_token.html" title="Setup TFC API Token " class="dd-item active">
         <a href="/workshop-terraform-modules/40_setup_cloud9_ide/43_setup_tfc_api_token.html">
         Setup TFC API Token 
         <i class="fas fa-check read-icon"></i>
@@ -755,6 +755,45 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/workshop-terraform-modules/'>AWS Terraform Workshop</a> > <a href='/workshop-terraform-modules/40_setup_cloud9_ide.html'>Setup AWS Cloud9</a> > Setup TFC API Token 
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
@@ -766,27 +805,31 @@
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="aws-terraform-workshop">AWS Terraform Workshop</h1>
-<h3 id="welcome">Welcome</h3>
-<p>In this workshop you will learn how to use terraform modules to deploy infrastructure on AWS</p>
-<h3 id="learning-objectives">Learning Objectives</h3>
+<h3 id="in-cloud9-terminal">In Cloud9 Terminal</h3>
+<p>Run <code>terraform login</code></p>
+<p><img src="images/terraform-login1.png" alt="terraform-login1"></p>
 <ul>
-<li>Terraform Modules on AWS Overview</li>
-<li>Create Terraform Cloud Account</li>
-<li>Setup Terraform for Cloud Workspace</li>
-<li>Build a sample architecture using Terraform Modules</li>
+<li>Confirm by typing <strong>yes</strong></li>
 </ul>
+<p>Paste the following url into your browser to continue <code>https://app.terraform.io/app/settings/tokens?source=terraform-login</code></p>
+<p><img src="images/terraform-login2.png" alt="terraform-login2"></p>
+<p>Click <strong>Create API token</strong></p>
+<p><img src="images/terraform-login3.png" alt="terraform-login3"></p>
+<p>Click <strong>to Copy API token to clipboard</strong></p>
 
-<div class="notices warning" ><!-- raw HTML omitted -->
+<div class="notices warning" ><p>You will not see visual indications while pasting the token</p>
 </div>
 
+<p>Paste into you Cloud9 Terminal</p>
+<p>Expected output:
+<img src="images/terraform-login4.png" alt="terraform-login4"></p>
+
+
+<footer class="footline">
 	
-  
+</footer>
+
         
             </div> 
         
@@ -1028,6 +1071,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1046,6 +1090,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1211,8 +1258,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/workshop-terraform-modules/40_setup_cloud9_ide/42_install_terraform_c9.html" title="Install Terraform in c9 "> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/workshop-terraform-modules/10_getting_started.html" title="Getting Started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/workshop-terraform-modules/50_clone_module.html" title="Clone VPC Module" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

@@ -102,7 +102,7 @@
 	"title": "Setup TFC API Token ",
 	"tags": [],
 	"description": "",
-	"content": "In Cloud9 Terminal Run terraform login\n Confirm by typing yes  Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login\nClick Create API token\nClick to Copy API token to clipboard\nNOTE: You will not see visual indications while pasting the token\nPaste into you Cloud9 Terminal\nExpected output: "
+	"content": "In Cloud9 Terminal Run terraform login\n Confirm by typing yes  Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login\nClick Create API token\nClick to Copy API token to clipboard\nYou will not see visual indications while pasting the token\n Paste into you Cloud9 Terminal\nExpected output: "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/50_clone_module.html",
@@ -130,7 +130,7 @@
 	"title": "Setup auto tfvars",
 	"tags": [],
 	"description": "",
-	"content": "Configure your tfvars file vi $HOME/terraform.tfvars\nCreate a file that contains the inputs for the vpc module\nSetup module inputs AWS_ACCESS_KEY_ID = \u0026quot;*********************\u0026quot; AWS_SECRET_ACCESS_KEY = \u0026quot;*********************\u0026quot; tfe_organization = \u0026quot;the-org-name-you-created\u0026quot; tfe_email = \u0026quot;someone@companyx.com\u0026quot; region = \u0026quot;us-east-2\u0026quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended\n %\n"
+	"content": "Configure your tfvars file touch $HOME/enviornment/terraform.tfvars\nCreate a file that contains the inputs for the vpc module\nSetup module inputs AWS_ACCESS_KEY_ID = \u0026quot;*********************\u0026quot; AWS_SECRET_ACCESS_KEY = \u0026quot;*********************\u0026quot; tfe_organization = \u0026quot;the-org-name-you-created\u0026quot; tfe_email = \u0026quot;someone@companyx.com\u0026quot; region = \u0026quot;us-east-2\u0026quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended\n %\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure.html",

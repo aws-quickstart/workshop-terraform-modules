@@ -49,8 +49,8 @@ Add terraform to /usr/local/bin sudo mv terraform /usr/local/bin</description>
  Confirm by typing yes  Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login
 Click Create API token
 Click to Copy API token to clipboard
-NOTE: You will not see visual indications while pasting the token
-Paste into you Cloud9 Terminal
+You will not see visual indications while pasting the token
+ Paste into you Cloud9 Terminal
 Expected output: </description>
     </item>
     

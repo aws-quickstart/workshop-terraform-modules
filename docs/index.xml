@@ -117,8 +117,8 @@ Add terraform to /usr/local/bin sudo mv terraform /usr/local/bin</description>
  Confirm by typing yes  Paste the following url into your browser to continue https://app.terraform.io/app/settings/tokens?source=terraform-login
 Click Create API token
 Click to Copy API token to clipboard
-NOTE: You will not see visual indications while pasting the token
-Paste into you Cloud9 Terminal
+You will not see visual indications while pasting the token
+ Paste into you Cloud9 Terminal
 Expected output: </description>
     </item>
     
@@ -137,7 +137,7 @@ Expected output: </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/60_setup_tf_inputs/61_setup_auto_tfvars.html</guid>
-      <description>Configure your tfvars file vi $HOME/terraform.tfvars
+      <description>Configure your tfvars file touch $HOME/enviornment/terraform.tfvars
 Create a file that contains the inputs for the vpc module
 Setup module inputs AWS_ACCESS_KEY_ID = &amp;quot;*********************&amp;quot; AWS_SECRET_ACCESS_KEY = &amp;quot;*********************&amp;quot; tfe_organization = &amp;quot;the-org-name-you-created&amp;quot; tfe_email = &amp;quot;someone@companyx.com&amp;quot; region = &amp;quot;us-east-2&amp;quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended
  %</description>
