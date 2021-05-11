@@ -39,7 +39,7 @@
 	"title": "Signup for Account",
 	"tags": [],
 	"description": "",
-	"content": "Go here to create an account\n  Enter a Username\n  Enter an Email\n  Enter a Password\n  Choose Create account\n  "
+	"content": "Go here to create an account\n  Enter a Username\n  Enter an Email\n  Enter a Password\n  Choose Create account\n   Email Activation Required\n "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/30_create_terraform_cloud_account/11_register.html",
@@ -74,7 +74,7 @@
 	"title": "Terraform Cloud",
 	"tags": [],
 	"description": "",
-	"content": "Getting Started If you have a existing terraform cloud account you can skip the registeration\n "
+	"content": "Getting Started If you have a existing terraform cloud account you can skip the registration\n "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/40_setup_cloud9_ide.html",

@@ -15,3 +15,7 @@ Go [here](https://app.terraform.io/signup/account) to create an account
 3. Enter a Password
 
 4. Choose Create account
+
+> Email Activation Required
+
+![email](images/email.png)
