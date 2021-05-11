@@ -36,6 +36,9 @@ Use the __GetCallerIdentity__ cli command to validate that the Cloud9 IDE is usi
 aws sts get-caller-identity
 ```
 
+Expected Output:
+![sts](images/aws_creds2.png)
+
 {{% notice tip %}}
 Leave Cloud9 open we will be using cloud9 through out this workshop
 {{% /notice %}}
