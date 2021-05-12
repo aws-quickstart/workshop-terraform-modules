@@ -12,13 +12,15 @@ echo "region = us-east-1" >>db.auto.tfvars
 cat db.auto.tfvars
 ```
 
-
 #### Create db.tf
 
 `touch db.tf`
 
-Copy to the code snip below into db.tf
+![db-1](images/db1.png)
 
+Add code snip below into db.tf
+
+Copy:
 ```
 module "rds-aurora" {
   source         = "aws-quickstart/rds-aurora/aws"
@@ -29,11 +31,18 @@ module "rds-aurora" {
 }
 ```
 
+Paste:
+![db-2](images/db2.png)
+
+
 #### Create db_vars.tf
 
 `touch db_vars.tf`
 
-Copy to the code snip below into db_vars.tf
+Add code snip below into db_vars.tf
+![db-vars-1](images/db_vars1.png)
+
+Copy:
 
 ```
 
@@ -48,3 +57,7 @@ variable "password" {
   type        = string
   default     = ""
 }
+```
+
+Paste:
+![db-vars-1](images/db_vars2.png)
