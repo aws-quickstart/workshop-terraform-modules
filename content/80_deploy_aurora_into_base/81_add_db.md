@@ -8,14 +8,14 @@ weight = 81
 ```
 echo "db_vpc_id = $(terraform output vpc_id)" >db.auto.tfvars
 echo "password = \"db$(hostid)\"" >>db.auto.tfvars
-echo "region = us-east2" >>db.auto.tfvars
+echo "region = us-east-1" >>db.auto.tfvars
 cat db.auto.tfvars
 ```
 
 
 #### Create db.tf
 
-`vi db.tf`
+`touch db.tf`
 
 Copy to the code snip below into db.tf
 
@@ -31,7 +31,7 @@ module "rds-aurora" {
 
 #### Create db_vars.tf
 
-`vi db_vars.tf`
+`touch db_vars.tf`
 
 Copy to the code snip below into db_vars.tf
 
