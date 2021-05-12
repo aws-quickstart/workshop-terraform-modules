@@ -130,7 +130,7 @@
 	"title": "Setup auto tfvars",
 	"tags": [],
 	"description": "",
-	"content": "Configure your tfvars file touch $HOME/enviornment/terraform.tfvars\nCreate a file that contains the inputs for the vpc module\nSetup module inputs AWS_ACCESS_KEY_ID = \u0026quot;*********************\u0026quot; AWS_SECRET_ACCESS_KEY = \u0026quot;*********************\u0026quot; tfe_organization = \u0026quot;the-org-name-you-created\u0026quot; tfe_email = \u0026quot;someone@companyx.com\u0026quot; region = \u0026quot;us-east-2\u0026quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended\n %\n"
+	"content": "Configure your tfvars file touch $HOME/enviornment/terraform.tfvars\nCreate a file that contains the inputs for the vpc module\nOpen file in cloud9 (Double click file)\nCopy:\nAWS_ACCESS_KEY_ID = \u0026quot;*********************\u0026quot; AWS_SECRET_ACCESS_KEY = \u0026quot;*********************\u0026quot; tfe_organization = \u0026quot;the-org-name-you-created\u0026quot; tfe_email = \u0026quot;someone@companyx.com\u0026quot; region = \u0026quot;us-east-1\u0026quot; Paste:\n (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended\n %\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure.html",
@@ -144,14 +144,7 @@
 	"title": "Setup TFC workspace",
 	"tags": [],
 	"description": "",
-	"content": "Setup Terraform workspace  Change directory to the root directory.  cd terraform-aws-vpc/\n Change to deploy directory  cd setup_workspace.\nExecute terraform  Run to following commands in order:  terraform init\nExport Terraform Config Location  export TERRAFORM_CONFIG=\u0026quot;$HOME/.terraform.d/credentials.tfrc.json\u0026quot;\nterraform apply -var-file=\u0026quot;$HOME/terraform.tfvars\u0026quot;.\nChange to the deploy folder cd ../deploy\nterraform apply -auto-approve\n"
-},
-{
-	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/72_deploy_vpc.html",
-	"title": "Deploy VPC into TFC",
-	"tags": [],
-	"description": "",
-	"content": "Deploy Terraform in workspace Change directory to deploy dir (previous command auto generates backend.hcl)\ncd ../deploy\nterraform apply or terraform apply -var-file=\u0026quot;$HOME/.aws/terraform.tfvars\u0026quot;.\nTerraform apply is run remotely in Terraform Cloud\n"
+	"content": "Export Terraform Config Location  export TERRAFORM_CONFIG=\u0026quot;$HOME/.terraform.d/credentials.tfrc.json\u0026quot;\nSetup Terraform workspace  Change directory to the module root directory.  cd terraform-aws-vpc/\n Change to setup_workspace directory  cd setup_workspace.\nInit terraform  Run to following commands in order:  terraform init\nExpected output: Creating a TFC Workspace terraform apply -var-file=\u0026quot;$HOME/environment/terraform.tfvars\u0026quot;.\nEnter yes when prompted for input\nExpected output: Change to the deploy folder cd ../deploy\nDeploys into the TFC Workspace terraform apply -auto-approve\nExpected output: "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base.html",
@@ -165,14 +158,21 @@
 	"title": "Add dB module",
 	"tags": [],
 	"description": "",
-	"content": "Create tfvars files echo \u0026quot;db_vpc_id = $(terraform output vpc_id)\u0026quot; \u0026gt;db.auto.tfvars echo \u0026quot;password = \\\u0026quot;db$(hostid)\\\u0026quot;\u0026quot; \u0026gt;\u0026gt;db.auto.tfvars echo \u0026quot;region = us-east2\u0026quot; \u0026gt;\u0026gt;db.auto.tfvars cat db.auto.tfvars Create db.tf vi db.tf\nCopy to the code snip below into db.tf\nmodule \u0026quot;rds-aurora\u0026quot; { source = \u0026quot;aws-quickstart/rds-aurora/aws\u0026quot; version = \u0026quot;0.0.10\u0026quot; region = var.region vpc_id = var.db_vpc_id password = var.password } Create db_vars.tf vi db_vars.tf\nCopy to the code snip below into db_vars.tf\n variable \u0026quot;db_vpc_id\u0026quot; { type = string description = \u0026quot;VPC id\u0026quot; default = \u0026quot;\u0026quot; } variable \u0026quot;password\u0026quot; { description = \u0026quot;Master DB password\u0026quot; type = string default = \u0026quot;\u0026quot; } "
+	"content": "Create tfvars files echo \u0026quot;db_vpc_id = $(terraform output vpc_id)\u0026quot; \u0026gt;db.auto.tfvars echo \u0026quot;password = \\\u0026quot;db$(hostid)\\\u0026quot;\u0026quot; \u0026gt;\u0026gt;db.auto.tfvars echo \u0026quot;region = us-east-1\u0026quot; \u0026gt;\u0026gt;db.auto.tfvars cat db.auto.tfvars Create db.tf touch db.tf\nAdd code snip below into db.tf\nCopy:\nmodule \u0026quot;rds-aurora\u0026quot; { source = \u0026quot;aws-quickstart/rds-aurora/aws\u0026quot; version = \u0026quot;0.0.10\u0026quot; region = var.region vpc_id = var.db_vpc_id password = var.password } Paste: Create db_vars.tf touch db_vars.tf\nAdd code snip below into db_vars.tf Copy:\n variable \u0026quot;db_vpc_id\u0026quot; { type = string description = \u0026quot;VPC id\u0026quot; default = \u0026quot;\u0026quot; } variable \u0026quot;password\u0026quot; { description = \u0026quot;Master DB password\u0026quot; type = string default = \u0026quot;\u0026quot; } Paste: "
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html",
 	"title": "Deploy dB module",
 	"tags": [],
 	"description": "",
-	"content": "Terraform Apply terraform apply -auto-approve\n"
+	"content": "The following command deploys RDS Aurora into our pre-existing Terraform Cloud Workspace\nTerraform Apply terraform apply -auto-approve\nFollowing this pattern allow you to layer up AWS resource deployments\n"
+},
+{
+	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/90_tf_destory.html",
+	"title": "Clean up",
+	"tags": [],
+	"description": "",
+	"content": "In this module we will clean up our lab environment.\nTo destroy the environment,issue the following command:\nterraform destroy\nMake sure you are in the “deploy” directory. Will have to type “yes” to confirm.\n"
 },
 {
 	"uri": "https://aws-quickstart.github.io/workshop-terraform-modules/categories.html",

@@ -139,7 +139,10 @@ Expected output: </description>
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/60_setup_tf_inputs/61_setup_auto_tfvars.html</guid>
       <description>Configure your tfvars file touch $HOME/enviornment/terraform.tfvars
 Create a file that contains the inputs for the vpc module
-Setup module inputs AWS_ACCESS_KEY_ID = &amp;quot;*********************&amp;quot; AWS_SECRET_ACCESS_KEY = &amp;quot;*********************&amp;quot; tfe_organization = &amp;quot;the-org-name-you-created&amp;quot; tfe_email = &amp;quot;someone@companyx.com&amp;quot; region = &amp;quot;us-east-2&amp;quot;  (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended
+Open file in cloud9 (Double click file)
+Copy:
+AWS_ACCESS_KEY_ID = &amp;quot;*********************&amp;quot; AWS_SECRET_ACCESS_KEY = &amp;quot;*********************&amp;quot; tfe_organization = &amp;quot;the-org-name-you-created&amp;quot; tfe_email = &amp;quot;someone@companyx.com&amp;quot; region = &amp;quot;us-east-1&amp;quot; Paste:
+ (replace *** with AKEY and SKEY) !!!!CAUTION!!!!: In production this method of input is not recommended
  %</description>
     </item>
     
@@ -149,25 +152,14 @@ Setup module inputs AWS_ACCESS_KEY_ID = &amp;quot;*********************&amp;quot
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html</guid>
-      <description>Setup Terraform workspace  Change directory to the root directory.  cd terraform-aws-vpc/
- Change to deploy directory  cd setup_workspace.
-Execute terraform  Run to following commands in order:  terraform init
-Export Terraform Config Location  export TERRAFORM_CONFIG=&amp;quot;$HOME/.terraform.d/credentials.tfrc.json&amp;quot;
-terraform apply -var-file=&amp;quot;$HOME/terraform.tfvars&amp;quot;.
-Change to the deploy folder cd ../deploy
-terraform apply -auto-approve</description>
-    </item>
-    
-    <item>
-      <title>Deploy VPC into TFC</title>
-      <link>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/72_deploy_vpc.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/72_deploy_vpc.html</guid>
-      <description>Deploy Terraform in workspace Change directory to deploy dir (previous command auto generates backend.hcl)
-cd ../deploy
-terraform apply or terraform apply -var-file=&amp;quot;$HOME/.aws/terraform.tfvars&amp;quot;.
-Terraform apply is run remotely in Terraform Cloud</description>
+      <description>Export Terraform Config Location  export TERRAFORM_CONFIG=&amp;quot;$HOME/.terraform.d/credentials.tfrc.json&amp;quot;
+Setup Terraform workspace  Change directory to the module root directory.  cd terraform-aws-vpc/
+ Change to setup_workspace directory  cd setup_workspace.
+Init terraform  Run to following commands in order:  terraform init
+Expected output: Creating a TFC Workspace terraform apply -var-file=&amp;quot;$HOME/environment/terraform.tfvars&amp;quot;.
+Enter yes when prompted for input
+Expected output: Change to the deploy folder cd ../deploy
+Deploys into the TFC Workspace terraform apply -auto-approve</description>
     </item>
     
     <item>
@@ -176,11 +168,12 @@ Terraform apply is run remotely in Terraform Cloud</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html</guid>
-      <description>Create tfvars files echo &amp;quot;db_vpc_id = $(terraform output vpc_id)&amp;quot; &amp;gt;db.auto.tfvars echo &amp;quot;password = \&amp;quot;db$(hostid)\&amp;quot;&amp;quot; &amp;gt;&amp;gt;db.auto.tfvars echo &amp;quot;region = us-east2&amp;quot; &amp;gt;&amp;gt;db.auto.tfvars cat db.auto.tfvars Create db.tf vi db.tf
-Copy to the code snip below into db.tf
-module &amp;quot;rds-aurora&amp;quot; { source = &amp;quot;aws-quickstart/rds-aurora/aws&amp;quot; version = &amp;quot;0.0.10&amp;quot; region = var.region vpc_id = var.db_vpc_id password = var.password } Create db_vars.tf vi db_vars.tf
-Copy to the code snip below into db_vars.tf
- variable &amp;quot;db_vpc_id&amp;quot; { type = string description = &amp;quot;VPC id&amp;quot; default = &amp;quot;&amp;quot; } variable &amp;quot;password&amp;quot; { description = &amp;quot;Master DB password&amp;quot; type = string default = &amp;quot;&amp;quot; } </description>
+      <description>Create tfvars files echo &amp;quot;db_vpc_id = $(terraform output vpc_id)&amp;quot; &amp;gt;db.auto.tfvars echo &amp;quot;password = \&amp;quot;db$(hostid)\&amp;quot;&amp;quot; &amp;gt;&amp;gt;db.auto.tfvars echo &amp;quot;region = us-east-1&amp;quot; &amp;gt;&amp;gt;db.auto.tfvars cat db.auto.tfvars Create db.tf touch db.tf
+Add code snip below into db.tf
+Copy:
+module &amp;quot;rds-aurora&amp;quot; { source = &amp;quot;aws-quickstart/rds-aurora/aws&amp;quot; version = &amp;quot;0.0.10&amp;quot; region = var.region vpc_id = var.db_vpc_id password = var.password } Paste: Create db_vars.tf touch db_vars.tf
+Add code snip below into db_vars.tf Copy:
+ variable &amp;quot;db_vpc_id&amp;quot; { type = string description = &amp;quot;VPC id&amp;quot; default = &amp;quot;&amp;quot; } variable &amp;quot;password&amp;quot; { description = &amp;quot;Master DB password&amp;quot; type = string default = &amp;quot;&amp;quot; } Paste: </description>
     </item>
     
     <item>
@@ -189,7 +182,9 @@ Copy to the code snip below into db_vars.tf
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html</guid>
-      <description>Terraform Apply terraform apply -auto-approve</description>
+      <description>The following command deploys RDS Aurora into our pre-existing Terraform Cloud Workspace
+Terraform Apply terraform apply -auto-approve
+Following this pattern allow you to layer up AWS resource deployments</description>
     </item>
     
   </channel>

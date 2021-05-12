@@ -12,21 +12,21 @@
     <title>Setup TFC workspace :: Terraform on AWS Workshop</title>
 
     
-    <link href="/workshop-terraform-modules/css/nucleus.css?1620775158" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/fontawesome-all.min.css?1620775158" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/hybrid.css?1620775158" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/featherlight.min.css?1620775158" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/perfect-scrollbar.min.css?1620775158" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/auto-complete.css?1620775158" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/atom-one-dark-reasonable.css?1620775158" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/theme.css?1620775158" rel="stylesheet">
-    <link href="/workshop-terraform-modules/css/hugo-theme.css?1620775158" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/nucleus.css?1620781342" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/fontawesome-all.min.css?1620781342" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/hybrid.css?1620781342" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/featherlight.min.css?1620781342" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/perfect-scrollbar.min.css?1620781342" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/auto-complete.css?1620781342" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/atom-one-dark-reasonable.css?1620781342" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/theme.css?1620781342" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/hugo-theme.css?1620781342" rel="stylesheet">
     
-    <link href="/workshop-terraform-modules/css/theme-mine.css?1620775158" rel="stylesheet">
+    <link href="/workshop-terraform-modules/css/theme-mine.css?1620781342" rel="stylesheet">
     
     
 
-    <script src="/workshop-terraform-modules/js/jquery-3.3.1.min.js?1620775158"></script>
+    <script src="/workshop-terraform-modules/js/jquery-3.3.1.min.js?1620781342"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/workshop-terraform-modules/js/lunr.min.js?1620775158"></script>
-<script type="text/javascript" src="/workshop-terraform-modules/js/auto-complete.js?1620775158"></script>
+<script type="text/javascript" src="/workshop-terraform-modules/js/lunr.min.js?1620781342"></script>
+<script type="text/javascript" src="/workshop-terraform-modules/js/auto-complete.js?1620781342"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/aws-quickstart.github.io\/workshop-terraform-modules\/";
     
 </script>
-<script type="text/javascript" src="/workshop-terraform-modules/js/search.js?1620775158"></script>
+<script type="text/javascript" src="/workshop-terraform-modules/js/search.js?1620781342"></script>
 
     
   </div>
@@ -596,27 +596,6 @@
 
             
           
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/workshop-terraform-modules/amp/70_deploy_base_infrastructure/72_deploy_vpc.html" title="Deploy VPC into TFC" class="dd-item ">
-        <a href="/workshop-terraform-modules/amp/70_deploy_base_infrastructure/72_deploy_vpc.html">
-        Deploy VPC into TFC
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
       
@@ -697,6 +676,32 @@
           
         
         </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/workshop-terraform-modules/90_tf_destory.html" title="Clean up" class="dd-item
+        
+        
+        
+        ">
+      <a href="/workshop-terraform-modules/90_tf_destory.html">
+          Clean up
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
       
     </li>
   
@@ -806,26 +811,36 @@
         
 
 
+<h4 id="export-terraform-config-location">Export Terraform Config Location</h4>
+<p><code> export TERRAFORM_CONFIG=&quot;$HOME/.terraform.d/credentials.tfrc.json&quot;</code></p>
 <h4 id="setup-terraform-workspace">Setup Terraform workspace</h4>
 <ul>
-<li>Change directory to the root directory.</li>
+<li>Change directory to the module root directory.</li>
 </ul>
 <p><code>cd terraform-aws-vpc/</code></p>
 <ul>
-<li>Change to deploy directory</li>
+<li>Change to setup_workspace directory</li>
 </ul>
 <p><code>cd setup_workspace</code>.</p>
-<h4 id="execute-terraform">Execute terraform</h4>
+<h4 id="init-terraform">Init terraform</h4>
 <ul>
 <li>Run to following commands in order:</li>
 </ul>
 <p><code>terraform init</code></p>
-<h4 id="export-terraform-config-location">Export Terraform Config Location</h4>
-<p><code> export TERRAFORM_CONFIG=&quot;$HOME/.terraform.d/credentials.tfrc.json&quot;</code></p>
-<p><code>terraform apply  -var-file=&quot;$HOME/terraform.tfvars&quot;</code>.</p>
+<p>Expected output:
+<img src="images/tf-init.png" alt="tf-init"></p>
+<h4 id="creating-a-tfc-workspace">Creating a TFC Workspace</h4>
+<p><code>terraform apply  -var-file=&quot;$HOME/environment/terraform.tfvars&quot;</code>.</p>
+<p>Enter <strong>yes</strong> when prompted for input</p>
+<p><img src="images/tf-apply.png" alt="tf-init"></p>
+<p>Expected output:
+<img src="images/tf-apply-out1.png" alt="tf-init"></p>
 <h4 id="change-to-the-deploy-folder">Change to the deploy folder</h4>
 <p><code>cd ../deploy</code></p>
+<h4 id="deploys-into-the-tfc-workspace">Deploys into the TFC Workspace</h4>
 <p><code>terraform apply -auto-approve</code></p>
+<p>Expected output:
+<img src="images/tf-apply-out2.png" alt="tf-init"></p>
 
 
 <footer class="footline">
@@ -1181,25 +1196,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1207,6 +1203,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1247,6 +1246,22 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -1263,7 +1278,7 @@
 			<a class="nav nav-prev" href="/workshop-terraform-modules/70_deploy_base_infrastructure.html" title="Deploy base infrastructure"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/workshop-terraform-modules/amp/70_deploy_base_infrastructure/72_deploy_vpc.html" title="Deploy VPC into TFC" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/workshop-terraform-modules/80_deploy_aurora_into_base.html" title="Deploy DB into base infrastructure" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1273,19 +1288,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/workshop-terraform-modules/js/clipboard.min.js?1620775158"></script>
-    <script src="/workshop-terraform-modules/js/perfect-scrollbar.min.js?1620775158"></script>
-    <script src="/workshop-terraform-modules/js/perfect-scrollbar.jquery.min.js?1620775158"></script>
-    <script src="/workshop-terraform-modules/js/jquery.sticky.js?1620775158"></script>
-    <script src="/workshop-terraform-modules/js/featherlight.min.js?1620775158"></script>
-    <script src="/workshop-terraform-modules/js/highlight.pack.js?1620775158"></script>
+    <script src="/workshop-terraform-modules/js/clipboard.min.js?1620781342"></script>
+    <script src="/workshop-terraform-modules/js/perfect-scrollbar.min.js?1620781342"></script>
+    <script src="/workshop-terraform-modules/js/perfect-scrollbar.jquery.min.js?1620781342"></script>
+    <script src="/workshop-terraform-modules/js/jquery.sticky.js?1620781342"></script>
+    <script src="/workshop-terraform-modules/js/featherlight.min.js?1620781342"></script>
+    <script src="/workshop-terraform-modules/js/highlight.pack.js?1620781342"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/workshop-terraform-modules/js/modernizr.custom-3.6.0.js?1620775158"></script>
-    <script src="/workshop-terraform-modules/js/learn.js?1620775158"></script>
-    <script src="/workshop-terraform-modules/js/hugo-learn.js?1620775158"></script>
+    <script src="/workshop-terraform-modules/js/modernizr.custom-3.6.0.js?1620781342"></script>
+    <script src="/workshop-terraform-modules/js/learn.js?1620781342"></script>
+    <script src="/workshop-terraform-modules/js/hugo-learn.js?1620781342"></script>
     
         
-            <script src="/workshop-terraform-modules/mermaid/mermaid.js?1620775158"></script>
+            <script src="/workshop-terraform-modules/mermaid/mermaid.js?1620781342"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

@@ -44,13 +44,13 @@
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html</loc>
   </url><url>
-    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/72_deploy_vpc.html</loc>
-  </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html</loc>
+  </url><url>
+    <loc>https://aws-quickstart.github.io/workshop-terraform-modules/90_tf_destory.html</loc>
   </url><url>
     <loc>https://aws-quickstart.github.io/workshop-terraform-modules/categories.html</loc>
   </url><url>

@@ -12,11 +12,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/81_add_db.html</guid>
-      <description>Create tfvars files echo &amp;quot;db_vpc_id = $(terraform output vpc_id)&amp;quot; &amp;gt;db.auto.tfvars echo &amp;quot;password = \&amp;quot;db$(hostid)\&amp;quot;&amp;quot; &amp;gt;&amp;gt;db.auto.tfvars echo &amp;quot;region = us-east2&amp;quot; &amp;gt;&amp;gt;db.auto.tfvars cat db.auto.tfvars Create db.tf vi db.tf
-Copy to the code snip below into db.tf
-module &amp;quot;rds-aurora&amp;quot; { source = &amp;quot;aws-quickstart/rds-aurora/aws&amp;quot; version = &amp;quot;0.0.10&amp;quot; region = var.region vpc_id = var.db_vpc_id password = var.password } Create db_vars.tf vi db_vars.tf
-Copy to the code snip below into db_vars.tf
- variable &amp;quot;db_vpc_id&amp;quot; { type = string description = &amp;quot;VPC id&amp;quot; default = &amp;quot;&amp;quot; } variable &amp;quot;password&amp;quot; { description = &amp;quot;Master DB password&amp;quot; type = string default = &amp;quot;&amp;quot; } </description>
+      <description>Create tfvars files echo &amp;quot;db_vpc_id = $(terraform output vpc_id)&amp;quot; &amp;gt;db.auto.tfvars echo &amp;quot;password = \&amp;quot;db$(hostid)\&amp;quot;&amp;quot; &amp;gt;&amp;gt;db.auto.tfvars echo &amp;quot;region = us-east-1&amp;quot; &amp;gt;&amp;gt;db.auto.tfvars cat db.auto.tfvars Create db.tf touch db.tf
+Add code snip below into db.tf
+Copy:
+module &amp;quot;rds-aurora&amp;quot; { source = &amp;quot;aws-quickstart/rds-aurora/aws&amp;quot; version = &amp;quot;0.0.10&amp;quot; region = var.region vpc_id = var.db_vpc_id password = var.password } Paste: Create db_vars.tf touch db_vars.tf
+Add code snip below into db_vars.tf Copy:
+ variable &amp;quot;db_vpc_id&amp;quot; { type = string description = &amp;quot;VPC id&amp;quot; default = &amp;quot;&amp;quot; } variable &amp;quot;password&amp;quot; { description = &amp;quot;Master DB password&amp;quot; type = string default = &amp;quot;&amp;quot; } Paste: </description>
     </item>
     
     <item>
@@ -25,7 +26,9 @@ Copy to the code snip below into db_vars.tf
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/80_deploy_aurora_into_base/82_deploy_db.html</guid>
-      <description>Terraform Apply terraform apply -auto-approve</description>
+      <description>The following command deploys RDS Aurora into our pre-existing Terraform Cloud Workspace
+Terraform Apply terraform apply -auto-approve
+Following this pattern allow you to layer up AWS resource deployments</description>
     </item>
     
   </channel>

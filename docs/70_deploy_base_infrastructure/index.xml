@@ -12,25 +12,14 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/71_deploy_base_infra.html</guid>
-      <description>Setup Terraform workspace  Change directory to the root directory.  cd terraform-aws-vpc/
- Change to deploy directory  cd setup_workspace.
-Execute terraform  Run to following commands in order:  terraform init
-Export Terraform Config Location  export TERRAFORM_CONFIG=&amp;quot;$HOME/.terraform.d/credentials.tfrc.json&amp;quot;
-terraform apply -var-file=&amp;quot;$HOME/terraform.tfvars&amp;quot;.
-Change to the deploy folder cd ../deploy
-terraform apply -auto-approve</description>
-    </item>
-    
-    <item>
-      <title>Deploy VPC into TFC</title>
-      <link>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/72_deploy_vpc.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aws-quickstart.github.io/workshop-terraform-modules/70_deploy_base_infrastructure/72_deploy_vpc.html</guid>
-      <description>Deploy Terraform in workspace Change directory to deploy dir (previous command auto generates backend.hcl)
-cd ../deploy
-terraform apply or terraform apply -var-file=&amp;quot;$HOME/.aws/terraform.tfvars&amp;quot;.
-Terraform apply is run remotely in Terraform Cloud</description>
+      <description>Export Terraform Config Location  export TERRAFORM_CONFIG=&amp;quot;$HOME/.terraform.d/credentials.tfrc.json&amp;quot;
+Setup Terraform workspace  Change directory to the module root directory.  cd terraform-aws-vpc/
+ Change to setup_workspace directory  cd setup_workspace.
+Init terraform  Run to following commands in order:  terraform init
+Expected output: Creating a TFC Workspace terraform apply -var-file=&amp;quot;$HOME/environment/terraform.tfvars&amp;quot;.
+Enter yes when prompted for input
+Expected output: Change to the deploy folder cd ../deploy
+Deploys into the TFC Workspace terraform apply -auto-approve</description>
     </item>
     
   </channel>
